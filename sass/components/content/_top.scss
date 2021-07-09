@@ -1,3 +1,38 @@
-$enfont : 'Montserrat', sans-serif;
-$jpfont : 'Noto Sans JP', sans-serif;
-$gillsansfont : 'gill-sans-nova', sans-serif;
+.l {
+    &-mv {
+        &-inn {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            padding-right: 50px;
+            &-image {
+                position: relative;
+                width: 87.5%;
+                height: 100vh;
+                margin-left: auto;
+            }
+            &-ttl {
+                position: absolute;
+                width: 39%;
+                left: -23px;
+                top: 49%;
+                mix-blend-mode: luminosity;
+                z-index: 9;
+            }
+            &-infotxt {
+                padding-top: 80px;
+                span {
+                    display: inline-block;
+                    padding: 0 3px;
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    color: #fff;
+                    background-color: #000;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+}

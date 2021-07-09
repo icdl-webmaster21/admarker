@@ -1,0 +1,15 @@
+.l {
+    &-ft {
+        &-inn {
+            padding: 25px 0 15px;
+        }
+        .copyright {
+            padding-left: 50px;
+            font-size: 10px;
+            font-size: 1.0rem;
+            font-family: $gillsansfont;
+            letter-spacing: 0.05em;
+            color: #adadad;
+        }
+    }
+}
