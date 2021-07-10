@@ -25,10 +25,10 @@ $('.menu-bar').on('click', function() {
 $(".l-mv-inn-image").vegas({
     overlay: true,
     transition: 'fade',
-    transitionDuration: 4000,
-    delay: 10000,
+    transitionDuration: 3000,
+    delay: 9000,
     animation: 'random',
-    animationDuration: 20000,
+    animationDuration: 10000,
     slides: [
         { src: "images/slide1.png" },
         { src: "images/slide2.png" },

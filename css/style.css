@@ -117,6 +117,8 @@ img {
   scrollbar-width: none; }
   .l-hd::-webkit-scrollbar {
     width: 0px; }
+  .l-hd.sub-hd {
+    box-shadow: 2px 0px 4px rgba(102, 102, 102, 0.1); }
   @media screen and (max-width: 768px) {
     .l-hd {
       width: 100%;
@@ -149,7 +151,8 @@ img {
       background-color: #000;
       color: #fff;
       overflow-y: scroll;
-      overflow-x: hidden; }
+      overflow-x: hidden;
+      padding: 20px 10px 0 10px; }
       .l-hd-inn.show-menu .menu-bar {
         width: 40px; }
       @media screen and (max-width: 768px) {
@@ -354,6 +357,10 @@ img {
     font-size: 10px;
     font-size: 1.0rem;
     letter-spacing: 0.05em; }
+    @media screen and (max-width: 768px) {
+      .l-hd .hd-copy {
+        left: 0;
+        bottom: 0; } }
 
 .site-main {
   width: 80%;
@@ -397,7 +404,7 @@ img {
       .l-mv-inn-ttl {
         width: 60%;
         left: 0%;
-        top: 58%;
+        bottom: 100px;
         margin-left: 27px; } }
   .l-mv-inn-infotxt {
     padding-top: 80px; }
