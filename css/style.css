@@ -413,42 +413,98 @@ img {
           font-size: 15px;
           font-size: 1.5rem; } }
 
-.sl-about-inn-company-ttl {
-  font-size: 33px;
-  font-size: 3.3rem;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 2;
-  color: #f8bb2c;
-  margin-bottom: 30px; }
-  .sl-about-inn-company-ttl small {
-    font-size: 10px;
-    font-size: 1.0rem;
-    letter-spacing: 0.05em;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
-    color: #f7dda9;
-    padding-left: 20px; }
-.sl-about-inn-company-fl {
-  justify-content: space-between;
-  max-width: 782px;
-  width: 80%; }
-  .sl-about-inn-company-fl .company {
-    width: 48%; }
-    .sl-about-inn-company-fl .company dl {
-      display: flex;
-      border-bottom: 1px solid #999999;
-      padding-bottom: 30px;
-      margin-bottom: 30px;
-      color: #231815;
-      font-size: 12px;
-      font-size: 1.2rem;
-      line-height: 2;
-      letter-spacing: 0.05em;
-      font-family: "Noto Sans JP", sans-serif;
-      font-weight: 400; }
-    .sl-about-inn-company-fl .company dt {
-      width: 83px; }
+.sl .site-main {
+  position: relative;
+  z-index: 1; }
+  .sl .site-main:after {
+    content: "";
+    height: 170px;
+    max-width: 816px;
+    width: 80%;
+    background-image: url("../images/bg-logo.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 335px;
+    left: 5.7%; }
+.sl-about {
+  width: 100%;
+  padding-left: 72px;
+  position: relative;
+  z-index: 1; }
+  .sl-about-inn {
+    max-width: 782px;
+    width: 95%; }
+    .sl-about-inn-company {
+      margin-bottom: 80px;
+      border-bottom: 1px solid #999999; }
+      .sl-about-inn-company-ttl {
+        font-size: 33px;
+        font-size: 3.3rem;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 2;
+        color: #f8bb2c;
+        margin-bottom: 30px; }
+        .sl-about-inn-company-ttl small {
+          font-size: 10px;
+          font-size: 1.0rem;
+          letter-spacing: 0.05em;
+          font-family: "Noto Sans JP", sans-serif;
+          font-weight: 400;
+          color: #f7dda9;
+          padding-left: 20px; }
+      .sl-about-inn-company-fl {
+        justify-content: space-between; }
+        .sl-about-inn-company-fl .company {
+          width: 46%; }
+          .sl-about-inn-company-fl .company dl {
+            display: flex;
+            border-bottom: 1px solid #999999;
+            padding: 30px 20px 25px;
+            color: #231815;
+            font-size: 12px;
+            font-size: 1.2rem;
+            line-height: 2.2;
+            letter-spacing: 0.05em;
+            font-family: "Noto Sans JP", sans-serif;
+            font-weight: 400; }
+          .sl-about-inn-company-fl .company dt {
+            width: 83px; }
+      .sl-about-inn-company-chart h4 {
+        padding: 30px 20px 0;
+        color: #231815;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 2.2;
+        letter-spacing: 0.05em;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px; }
+      .sl-about-inn-company-chart figure {
+        max-width: 510px;
+        width: 65%;
+        padding: 0 0 50px 20px; }
+    .sl-about-inn-access-fl {
+      flex-wrap: nowrap; }
+      .sl-about-inn-access-fl .access {
+        width: 50%;
+        max-width: 346px;
+        margin-bottom: 40px;
+        color: #231815;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 2.2;
+        letter-spacing: 0.05em;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 400; }
+        .sl-about-inn-access-fl .access:last-child {
+          max-width: 100%; }
+    .sl-about-inn-access-address {
+      max-width: 726px;
+      width: 75%;
+      padding-bottom: 40px; }
 
 .title01 {
   font-size: 14px;
@@ -456,14 +512,17 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.2em;
-  line-height: l 0.6; }
+  line-height: l 0.6;
+  margin-bottom: 50px;
+  color: #231815; }
   .title01:after {
     content: "";
     width: 10px;
     height: 1.5px;
     background: #f8bb2c;
     display: block;
-    float: left; }
+    float: left;
+    margin-top: 20px; }
 
 @media screen and (max-width: 768px) {
   .l-ft {

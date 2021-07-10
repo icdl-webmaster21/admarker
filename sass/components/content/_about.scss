@@ -1,8 +1,32 @@
 .sl {
+    .site-main {
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            height: 170px;
+            max-width: 816px;
+            width: 80%;
+            background-image: url('../images/bg-logo.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 335px;
+            left: 5.7%;
+        }
+    }
     &-about {
+        width: 100%;
+        padding-left: 72px;
+        position: relative;
+        z-index: 1;
         &-inn {
-            &-ttl {}
+            max-width: 782px;
+            width: 95%;
             &-company {
+                margin-bottom: 80px;
+                border-bottom: 1px solid #999999;
                 &-ttl {
                     font-size: 33px;
                     font-size: 3.3rem;
@@ -23,19 +47,16 @@
                 }
                 &-fl {
                     justify-content: space-between;
-                    max-width: 782px;
-                    width: 80%;
                     .company {
-                        width: 48%;
+                        width: 46%;
                         dl {
                             display: flex;
                             border-bottom: 1px solid #999999;
-                            padding-bottom: 30px;
-                            margin-bottom: 30px;
+                            padding: 30px 20px 25px;
                             color: #231815;
                             font-size: 12px;
                             font-size: 1.2rem;
-                            line-height: 2;
+                            line-height: 2.2;
                             letter-spacing: 0.05em;
                             font-family: $jpfont;
                             font-weight: 400;
@@ -44,6 +65,49 @@
                             width: 83px;
                         }
                     }
+                }
+                &-chart {
+                    h4 {
+                        padding: 30px 20px 0;
+                        color: #231815;
+                        font-size: 12px;
+                        font-size: 1.2rem;
+                        line-height: 2.2;
+                        letter-spacing: 0.05em;
+                        font-family: $jpfont;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+                    figure {
+                        max-width: 510px;
+                        width: 65%;
+                        padding: 0 0 50px 20px;
+                    }
+                }
+            }
+            &-access {
+                &-fl {
+                    flex-wrap: nowrap;
+                    .access {
+                        width: 50%;
+                        max-width: 346px;
+                        margin-bottom: 40px;
+                        color: #231815;
+                        font-size: 12px;
+                        font-size: 1.2rem;
+                        line-height: 2.2;
+                        letter-spacing: 0.05em;
+                        font-family: $jpfont;
+                        font-weight: 400;
+                        &:last-child {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                &-address {
+                    max-width: 726px;
+                    width: 75%;
+                    padding-bottom: 40px;
                 }
             }
         }
@@ -57,6 +121,8 @@
     font-weight: 500;
     letter-spacing: 0.2em;
     line-height: l.6;
+    margin-bottom: 50px;
+    color: #231815;
     &:after {
         content: "";
         width: 10px;
@@ -64,5 +130,6 @@
         background: #f8bb2c;
         display: block;
         float: left;
+        margin-top: 20px;
     }
 }
