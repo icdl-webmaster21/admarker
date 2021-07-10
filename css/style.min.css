@@ -1,7 +1,7 @@
 /*
-Error: File to import not found or unreadable: content/about.
+Error: File to import not found or unreadable: content/top.
        Load path: D:/xampp/htdocs/admarker/sass
-        on line 2 of D:/xampp/htdocs/admarker/sass/components/_components.scss
+        on line 1 of D:/xampp/htdocs/admarker/sass/components/_components.scss
         from line 2 of D:\xampp\htdocs\admarker\sass\style.scss
 
 1: @import 'base/base';
@@ -9,7 +9,7 @@ Error: File to import not found or unreadable: content/about.
 3: @import 'abstracts/abstracts';
 
 Backtrace:
-D:/xampp/htdocs/admarker/sass/components/_components.scss:2
+D:/xampp/htdocs/admarker/sass/components/_components.scss:1
 D:\xampp\htdocs\admarker\sass\style.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: content/about.\A        Load path: D:/xampp/htdocs/admarker/sass\A         on line 2 of D:/xampp/htdocs/admarker/sass/components/_components.scss\A         from line 2 of D:\xampp\htdocs\admarker\sass\style.scss\A \A 1: @import 'base/base';\A 2: @import 'components/components';\A 3: @import 'abstracts/abstracts';"; }
+  content: "Error: File to import not found or unreadable: content/top.\A        Load path: D:/xampp/htdocs/admarker/sass\A         on line 1 of D:/xampp/htdocs/admarker/sass/components/_components.scss\A         from line 2 of D:\xampp\htdocs\admarker\sass\style.scss\A \A 1: @import 'base/base';\A 2: @import 'components/components';\A 3: @import 'abstracts/abstracts';"; }
