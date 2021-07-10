@@ -110,6 +110,7 @@ img {
 
 .l-hd {
   width: 20%;
+  max-width: 280px;
   position: fixed;
   height: 100%;
   overflow-y: scroll;
@@ -119,6 +120,7 @@ img {
   @media screen and (max-width: 768px) {
     .l-hd {
       width: 100%;
+      max-width: 100%;
       top: 0;
       height: auto;
       background-color: #fff;
@@ -126,10 +128,13 @@ img {
       box-shadow: 2px 0px 4px rgba(102, 102, 102, 0.1);
       z-index: 99; } }
   .l-hd-inn {
+    position: relative;
+    height: 100%;
     margin-top: 60px;
     padding-left: 40px; }
     @media screen and (max-width: 768px) {
       .l-hd-inn {
+        height: auto;
         margin-top: 0;
         padding: 20px 10px;
         box-sizing: border-box; } }
@@ -142,7 +147,9 @@ img {
       right: 0;
       margin: 0 auto;
       background-color: #000;
-      color: #fff; }
+      color: #fff;
+      overflow-y: scroll;
+      overflow-x: hidden; }
       .l-hd-inn.show-menu .menu-bar {
         width: 40px; }
       @media screen and (max-width: 768px) {
@@ -167,17 +174,6 @@ img {
           width: 130px; } }
     .l-hd-inn .menu-bar {
       display: none; }
-    @media screen and (max-width: 768px) {
-      .l-hd-inn .hd-copy {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 10px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 10px;
-        font-size: 1.0rem;
-        letter-spacing: 0.05em; } }
     @media screen and (max-width: 768px) {
       .l-hd-inn .menu-bar {
         display: inline-block;
@@ -348,6 +344,16 @@ img {
                 @media screen and (max-width: 768px) {
                   .l-hd-inn-menu-inner .menu-list.sub-menu-02 li a:hover {
                     color: #fff; } }
+  .l-hd .hd-copy {
+    position: absolute;
+    left: 30px;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    font-size: 1.0rem;
+    letter-spacing: 0.05em; }
 
 .site-main {
   width: 80%;
@@ -358,11 +364,14 @@ img {
       width: 100%;
       padding-top: 100px; } }
 
+.noscroll {
+  overflow: hidden; }
+
 .l-mv-inn {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   padding-right: 50px; }
   @media screen and (max-width: 768px) {
     .l-mv-inn {
@@ -380,8 +389,8 @@ img {
   .l-mv-inn-ttl {
     position: absolute;
     width: 35%;
-    left: -5px;
-    top: 52%;
+    left: -9px;
+    bottom: 165px;
     mix-blend-mode: luminosity;
     z-index: 9; }
     @media screen and (max-width: 768px) {

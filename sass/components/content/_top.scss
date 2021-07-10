@@ -4,7 +4,7 @@
             position: relative;
             width: 100%;
             margin: 0 auto;
-            padding-bottom: 30px;
+            padding-bottom: 70px;
             padding-right: 50px;
             @include mqSp() {
                 padding: 0 10px;
@@ -23,8 +23,8 @@
             &-ttl {
                 position: absolute;
                 width: 35%;
-                left: -5px;
-                top: 52%;
+                left: -9px;
+                bottom: 165px;
                 mix-blend-mode: luminosity;
                 z-index: 9;
                 @include mqSp() {
