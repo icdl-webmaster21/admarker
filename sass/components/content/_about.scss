@@ -36,6 +36,7 @@
                     line-height: 2;
                     color: #f8bb2c;
                     margin-bottom: 30px;
+                    font-family: $bodonifont;
                     @include mqSp() {
                         font-size: 3rem;
                     }

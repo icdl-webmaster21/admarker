@@ -4,3 +4,9 @@ $jpfont: 'Noto Sans JP',
 sans-serif;
 $gillsansfont: 'gill-sans-nova',
 sans-serif;
+$bodonifont: "BodoniSvtyTwoITCTT",
+sans-serif;
+@font-face {
+    font-family: "BodoniSvtyTwoITCTT";
+    src: url('../font/BodoniSvtyTwoITCTT.ttf');
+}
