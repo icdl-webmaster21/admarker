@@ -6,22 +6,40 @@
             margin: 0 auto;
             padding-bottom: 30px;
             padding-right: 50px;
+            @include mqSp() {
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
             &-image {
                 position: relative;
                 width: 87.5%;
                 height: 100vh;
                 margin-left: auto;
+                @include mqSp {
+                    width: 80%;
+                    height: 65vh;
+                }
             }
             &-ttl {
                 position: absolute;
-                width: 39%;
-                left: -23px;
-                top: 49%;
+                width: 35%;
+                left: -5px;
+                top: 52%;
                 mix-blend-mode: luminosity;
                 z-index: 9;
+                @include mqSp() {
+                    width: 60%;
+                    left: 0%;
+                    top: 58%;
+                    margin-left: 27px;
+                }
             }
             &-infotxt {
                 padding-top: 80px;
+                @include mqSp() {
+                    padding-top: 40px;
+                    margin-left: 10px;
+                }
                 span {
                     display: inline-block;
                     padding: 0 3px;
@@ -31,6 +49,13 @@
                     color: #fff;
                     background-color: #000;
                     letter-spacing: 0.05em;
+                    @include mqSp() {
+                        display: inline;
+                        background-color: #231815;
+                        line-height: 1.7;
+                        font-size: 15px;
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }

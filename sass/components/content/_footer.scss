@@ -1,7 +1,14 @@
 .l {
     &-ft {
+        @include mqSp(){
+            margin-top: 40px;
+        }
         &-inn {
             padding: 25px 0 15px;
+            @include mqSp() {
+                padding: 20px 0;
+                background-color: #000;
+            }
         }
         .copyright {
             padding-left: 50px;
@@ -10,6 +17,11 @@
             font-family: $gillsansfont;
             letter-spacing: 0.05em;
             color: #adadad;
+            @include mqSp() {
+                padding-left: 0;
+                color: #fff;
+                text-align: center;
+            }
         }
     }
 }
