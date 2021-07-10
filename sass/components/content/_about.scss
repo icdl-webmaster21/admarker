@@ -24,9 +24,10 @@
         &-inn {
             max-width: 782px;
             width: 95%;
+            @include mqSp() {
+                width: 100%;
+            }
             &-company {
-                margin-bottom: 80px;
-                border-bottom: 1px solid #999999;
                 &-ttl {
                     font-size: 33px;
                     font-size: 3.3rem;
@@ -35,6 +36,9 @@
                     line-height: 2;
                     color: #f8bb2c;
                     margin-bottom: 30px;
+                    @include mqSp() {
+                        font-size: 3rem;
+                    }
                     small {
                         font-size: 10px;
                         font-size: 1.0rem;
@@ -47,8 +51,14 @@
                 }
                 &-fl {
                     justify-content: space-between;
+                    @include mqSp() {
+                        padding: 0 20px;
+                    }
                     .company {
                         width: 46%;
+                        @include mqSp() {
+                            width: 100%;
+                        }
                         dl {
                             display: flex;
                             border-bottom: 1px solid #999999;
@@ -60,13 +70,32 @@
                             letter-spacing: 0.05em;
                             font-family: $jpfont;
                             font-weight: 400;
+                            @include mqSp() {
+                                letter-spacing: 0.1em;
+                                padding: 20px 10px 15px;
+                            }
+                            &:last-child {
+                                @include mqSp() {
+                                    border-bottom: none;
+                                }
+                            }
                         }
                         dt {
                             width: 83px;
+                            @include mqSp() {
+                                width: 100px;
+                            }
                         }
                     }
                 }
                 &-chart {
+                    margin-bottom: 80px;
+                    border-bottom: 1px solid #999999;
+                    @include mqSp {
+                        padding: 0 20px;
+                        margin-bottom: 50px;
+                        border-bottom: none;
+                    }
                     h4 {
                         padding: 30px 20px 0;
                         color: #231815;
@@ -82,12 +111,20 @@
                         max-width: 510px;
                         width: 65%;
                         padding: 0 0 50px 20px;
+                        @include mqSp() {
+                            width: 100%;
+                            padding: 0 0 40px;
+                            border-bottom: 1px solid #999999;
+                        }
                     }
                 }
             }
             &-access {
                 &-fl {
-                    flex-wrap: nowrap;
+                    @include mqSp() {
+                        padding: 0 20px;
+                        border-top: 1px solid #999999;
+                    }
                     .access {
                         width: 50%;
                         max-width: 346px;
@@ -102,12 +139,22 @@
                         &:last-child {
                             max-width: 100%;
                         }
+                        @include mqSp() {
+                            width: 100%;
+                            max-width: 100%;
+                            margin-bottom: 20px;
+                            padding-top: 20px;
+                        }
                     }
                 }
                 &-address {
                     max-width: 726px;
                     width: 75%;
                     padding-bottom: 40px;
+                    @include mqSp() {
+                        width: 100%;
+                        max-width: 100%;
+                    }
                 }
             }
         }
