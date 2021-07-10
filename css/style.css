@@ -273,6 +273,9 @@ img {
       .l-hd-inn-menu-inner .border {
         padding-bottom: 10px;
         border-bottom: 1px solid #000000; }
+        @media screen and (max-width: 768px) {
+          .l-hd-inn-menu-inner .border {
+            border-bottom: 1px solid #fff; } }
       .l-hd-inn-menu-inner .plus {
         display: inline-block;
         width: 20px;
@@ -438,6 +441,78 @@ img {
     .l-ft-inn {
       padding: 20px 0;
       background-color: #000; } }
+  .l-ft-inn-menu {
+    padding-bottom: 25px; }
+    .l-ft-inn-menu-inner {
+      width: 100%;
+      margin: 0 auto; }
+      .l-ft-inn-menu-inner li {
+        position: relative;
+        margin: 20px 0; }
+        .l-ft-inn-menu-inner li a {
+          display: block;
+          font-family: "Montserrat", sans-serif;
+          font-size: 15px;
+          font-size: 1.5rem;
+          letter-spacing: 0.2em;
+          color: #fff;
+          text-align: center; }
+          .l-ft-inn-menu-inner li a.contact {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            border: 1px solid #fff; }
+          .l-ft-inn-menu-inner li a.pp {
+            font-size: 10px; }
+      .l-ft-inn-menu-inner .border {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff; }
+      .l-ft-inn-menu-inner .plus {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+        background-position: center;
+        background-size: 45% 1px, 1px 45%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -3px;
+        right: 50px; }
+      .l-ft-inn-menu-inner .minus {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+        background-position: center;
+        background-size: 1px 45%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -3px;
+        right: 50px;
+        transform: rotate(90deg); }
+      .l-ft-inn-menu-inner .menu-list {
+        display: none; }
+        .l-ft-inn-menu-inner .menu-list.show {
+          display: block; }
+        .l-ft-inn-menu-inner .menu-list.sub-menu-01 {
+          padding-left: 10px; }
+          .l-ft-inn-menu-inner .menu-list.sub-menu-01 li {
+            margin: 15px 0; }
+            .l-ft-inn-menu-inner .menu-list.sub-menu-01 li a {
+              font-size: 123px;
+              font-size: 1.2rem;
+              font-family: "Noto Sans JP", sans-serif; }
+        .l-ft-inn-menu-inner .menu-list.sub-menu-02 {
+          padding-left: 10px; }
+          .l-ft-inn-menu-inner .menu-list.sub-menu-02 li {
+            margin: 10px 0; }
+            .l-ft-inn-menu-inner .menu-list.sub-menu-02 li a {
+              font-size: 11px;
+              font-size: 1.1rem;
+              font-family: "Noto Sans JP", sans-serif;
+              color: #fff; }
 .l-ft .copyright {
   padding-left: 50px;
   font-size: 10px;

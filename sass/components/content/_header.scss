@@ -203,6 +203,9 @@
                     .border {
                         padding-bottom: 10px;
                         border-bottom: 1px solid #000000;
+                        @include mqSp {
+                            border-bottom: 1px solid #fff;
+                        }
                     }
                     .plus {
                         display: inline-block;

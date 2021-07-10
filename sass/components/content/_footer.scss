@@ -1,6 +1,6 @@
 .l {
     &-ft {
-        @include mqSp(){
+        @include mqSp() {
             margin-top: 40px;
         }
         &-inn {
@@ -8,6 +8,97 @@
             @include mqSp() {
                 padding: 20px 0;
                 background-color: #000;
+            }
+            &-menu {
+                padding-bottom: 25px;
+                &-inner {
+                    width: 100%;
+                    margin: 0 auto;
+                    li {
+                        position: relative;
+                        margin: 20px 0;
+                        a {
+                            display: block;
+                            font-family: $enfont;
+                            font-size: 15px;
+                            font-size: 1.5rem;
+                            letter-spacing: 0.2em;
+                            color: #fff;
+                            text-align: center;
+                            &.contact {
+                                display: block;
+                                width: 200px;
+                                margin: 30px auto;
+                                padding: 20px 10px;
+                                box-sizing: border-box;
+                                border: 1px solid #fff;
+                            }
+                            &.pp {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .border {
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #fff;
+                    }
+                    .plus {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+                        background-position: center;
+                        background-size: 45% 1px, 1px 45%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -3px;
+                        right: 50px;
+                    }
+                    .minus {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+                        background-position: center;
+                        background-size: 1px 45%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -3px;
+                        right: 50px;
+                        transform: rotate( 90deg);
+                    }
+                    .menu-list {
+                        display: none;
+                        &.show {
+                            display: block;
+                        }
+                        &.sub-menu {
+                            &-01 {
+                                padding-left: 10px;
+                                li {
+                                    margin: 15px 0;
+                                    a {
+                                        font-size: 123px;
+                                        font-size: 1.2rem;
+                                        font-family: $jpfont;
+                                    }
+                                }
+                            }
+                            &-02 {
+                                padding-left: 10px;
+                                li {
+                                    margin: 10px 0;
+                                    a {
+                                        font-size: 11px;
+                                        font-size: 1.1rem;
+                                        font-family: $jpfont;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         .copyright {
