@@ -1,0 +1,68 @@
+.sl {
+    &-about {
+        &-inn {
+            &-ttl {}
+            &-company {
+                &-ttl {
+                    font-size: 33px;
+                    font-size: 3.3rem;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                    line-height: 2;
+                    color: #f8bb2c;
+                    margin-bottom: 30px;
+                    small {
+                        font-size: 10px;
+                        font-size: 1.0rem;
+                        letter-spacing: 0.05em;
+                        font-family: $jpfont;
+                        font-weight: 400;
+                        color: #f7dda9;
+                        padding-left: 20px;
+                    }
+                }
+                &-fl {
+                    justify-content: space-between;
+                    max-width: 782px;
+                    width: 80%;
+                    .company {
+                        width: 48%;
+                        dl {
+                            display: flex;
+                            border-bottom: 1px solid #999999;
+                            padding-bottom: 30px;
+                            margin-bottom: 30px;
+                            color: #231815;
+                            font-size: 12px;
+                            font-size: 1.2rem;
+                            line-height: 2;
+                            letter-spacing: 0.05em;
+                            font-family: $jpfont;
+                            font-weight: 400;
+                        }
+                        dt {
+                            width: 83px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title01 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: $enfont;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    line-height: l.6;
+    &:after {
+        content: "";
+        width: 10px;
+        height: 1.5px;
+        background: #f8bb2c;
+        display: block;
+        float: left;
+    }
+}

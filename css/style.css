@@ -1,64 +1,490 @@
-/*
-Error: File to import not found or unreadable: content/about.
-       Load path: D:/xampp/htdocs/admarker/sass
-        on line 2 of D:/xampp/htdocs/admarker/sass/components/_components.scss
-        from line 2 of D:\xampp\htdocs\admarker\sass\style.scss
-
-1: @import 'base/base';
-2: @import 'components/components';
-3: @import 'abstracts/abstracts';
-
-Backtrace:
-D:/xampp/htdocs/admarker/sass/components/_components.scss:2
-D:\xampp\htdocs\admarker\sass\style.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: content/about.\A        Load path: D:/xampp/htdocs/admarker/sass\A         on line 2 of D:/xampp/htdocs/admarker/sass/components/_components.scss\A         from line 2 of D:\xampp\htdocs\admarker\sass\style.scss\A \A 1: @import 'base/base';\A 2: @import 'components/components';\A 3: @import 'abstracts/abstracts';"; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: normal; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-variant-ligatures: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff; }
+
+a, a:hover {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s; }
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto; }
+
+.d-fl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.sp {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .sp {
+      display: block; } }
+
+.pc {
+  display: block; }
+  @media screen and (max-width: 768px) {
+    .pc {
+      display: none; } }
+
+.l-hd {
+  width: 20%;
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none; }
+  .l-hd::-webkit-scrollbar {
+    width: 0px; }
+  @media screen and (max-width: 768px) {
+    .l-hd {
+      width: 100%;
+      top: 0;
+      height: auto;
+      background-color: #fff;
+      overflow: hidden;
+      box-shadow: 2px 0px 4px rgba(102, 102, 102, 0.1);
+      z-index: 99; } }
+  .l-hd-inn {
+    margin-top: 60px;
+    padding-left: 40px; }
+    @media screen and (max-width: 768px) {
+      .l-hd-inn {
+        margin-top: 0;
+        padding: 20px 10px;
+        box-sizing: border-box; } }
+    .l-hd-inn.show-menu {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: #000;
+      color: #fff; }
+      .l-hd-inn.show-menu .menu-bar {
+        width: 40px; }
+      @media screen and (max-width: 768px) {
+        .l-hd-inn.show-menu .l-hd-inn-menu {
+          visibility: visible;
+          opacity: 1;
+          height: 100%; }
+          .l-hd-inn.show-menu .l-hd-inn-menu li a {
+            color: #fff; } }
+    @media screen and (max-width: 768px) {
+      .l-hd-inn-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .l-hd-inn-logo.hide h1 {
+          opacity: 0; } }
+    .l-hd-inn-logo h1 {
+      width: 200px; }
+      @media screen and (max-width: 768px) {
+        .l-hd-inn-logo h1 {
+          width: 130px; } }
+    .l-hd-inn .menu-bar {
+      display: none; }
+    @media screen and (max-width: 768px) {
+      .l-hd-inn .hd-copy {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 10px;
+        font-size: 1.0rem;
+        letter-spacing: 0.05em; } }
+    @media screen and (max-width: 768px) {
+      .l-hd-inn .menu-bar {
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        background: none;
+        border: none;
+        appearance: none;
+        cursor: pointer;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        -ms-transition: all .4s;
+        -o-transition: all .4s; }
+        .l-hd-inn .menu-bar.active span:nth-child(1) {
+          top: -10px;
+          transform: translateY(20px) rotate(-45deg);
+          background-color: #fff; }
+        .l-hd-inn .menu-bar.active span:nth-child(2) {
+          left: 50%;
+          opacity: 0;
+          animation: active-menu-bar02 .8s forwards;
+          background-color: #fff; }
+        .l-hd-inn .menu-bar.active span:nth-child(3) {
+          width: 100%;
+          bottom: -6px;
+          transform: translateY(-20px) rotate(45deg);
+          background-color: #fff; }
+      @keyframes active-menu-bar02 {
+        100% {
+          height: 0; } }
+        .l-hd-inn .menu-bar span {
+          display: inline-block;
+          box-sizing: border-box;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #000;
+          border-radius: 4px;
+          transition: all .4s;
+          -webkit-transition: all .4s;
+          -moz-transition: all .4s;
+          -ms-transition: all .4s;
+          -o-transition: all .4s; }
+          .l-hd-inn .menu-bar span:nth-child(1) {
+            top: 0; }
+          .l-hd-inn .menu-bar span:nth-child(2) {
+            top: 12px;
+            width: 80%; }
+          .l-hd-inn .menu-bar span:nth-child(3) {
+            bottom: 0;
+            width: 60%; } }
+    @media screen and (max-width: 768px) {
+      .l-hd-inn-menu {
+        visibility: hidden;
+        opacity: 0;
+        height: 0; } }
+    .l-hd-inn-menu-inner {
+      max-width: 160px;
+      padding-top: 50px; }
+      @media screen and (max-width: 768px) {
+        .l-hd-inn-menu-inner {
+          width: 80%;
+          max-width: 100%;
+          padding-top: 30px;
+          margin: 0 auto; } }
+      .l-hd-inn-menu-inner li {
+        position: relative;
+        margin: 20px 0; }
+        @media screen and (max-width: 768px) {
+          .l-hd-inn-menu-inner li.top {
+            padding-left: 13px; }
+            .l-hd-inn-menu-inner li.top::before {
+              position: absolute;
+              content: '';
+              width: 20px;
+              height: 2px;
+              background-color: #fff;
+              top: 50%;
+              left: -20px; } }
+        .l-hd-inn-menu-inner li a {
+          display: inline-block;
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
+          font-size: 1.4rem;
+          letter-spacing: 0.2em; }
+          @media screen and (max-width: 768px) {
+            .l-hd-inn-menu-inner li a {
+              font-size: 25px;
+              font-size: 2.5rem; } }
+      .l-hd-inn-menu-inner .border {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000000; }
+      .l-hd-inn-menu-inner .plus {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(#000, #000), linear-gradient(#000, #000);
+        background-position: center;
+        background-size: 45% 1px, 1px 45%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -3px;
+        right: -5px; }
+        @media screen and (max-width: 768px) {
+          .l-hd-inn-menu-inner .plus {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+            background-position: center;
+            background-size: 45% 1px, 1px 45%;
+            background-repeat: no-repeat;
+            right: 0; } }
+      .l-hd-inn-menu-inner .minus {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(#000, #000), linear-gradient(#000, #000);
+        background-position: center;
+        background-size: 1px 45%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -3px;
+        right: -5px;
+        transform: rotate(90deg); }
+        @media screen and (max-width: 768px) {
+          .l-hd-inn-menu-inner .minus {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+            background-position: center;
+            background-size: 1px 45%;
+            background-repeat: no-repeat;
+            right: 0; } }
+      .l-hd-inn-menu-inner .menu-list {
+        display: none; }
+        .l-hd-inn-menu-inner .menu-list.show {
+          display: block; }
+        .l-hd-inn-menu-inner .menu-list.sub-menu-01 {
+          padding-left: 10px; }
+          .l-hd-inn-menu-inner .menu-list.sub-menu-01 li {
+            margin: 15px 0; }
+            .l-hd-inn-menu-inner .menu-list.sub-menu-01 li a {
+              font-size: 13px;
+              font-size: 1.3rem;
+              font-family: "Noto Sans JP", sans-serif; }
+              @media screen and (max-width: 768px) {
+                .l-hd-inn-menu-inner .menu-list.sub-menu-01 li a {
+                  font-size: 17px; } }
+        .l-hd-inn-menu-inner .menu-list.sub-menu-02 {
+          padding-left: 10px; }
+          .l-hd-inn-menu-inner .menu-list.sub-menu-02 li {
+            margin: 10px 0; }
+            .l-hd-inn-menu-inner .menu-list.sub-menu-02 li a {
+              font-size: 12px;
+              font-size: 1.2rem;
+              font-family: "Noto Sans JP", sans-serif;
+              color: #444444; }
+              @media screen and (max-width: 768px) {
+                .l-hd-inn-menu-inner .menu-list.sub-menu-02 li a {
+                  color: #fff;
+                  font-size: 14px; } }
+              .l-hd-inn-menu-inner .menu-list.sub-menu-02 li a:hover {
+                color: #f8bb2c; }
+                @media screen and (max-width: 768px) {
+                  .l-hd-inn-menu-inner .menu-list.sub-menu-02 li a:hover {
+                    color: #fff; } }
+
+.site-main {
+  width: 80%;
+  margin-left: auto;
+  padding-top: 60px; }
+  @media screen and (max-width: 768px) {
+    .site-main {
+      width: 100%;
+      padding-top: 100px; } }
+
+.l-mv-inn {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-right: 50px; }
+  @media screen and (max-width: 768px) {
+    .l-mv-inn {
+      padding: 0 10px;
+      box-sizing: border-box; } }
+  .l-mv-inn-image {
+    position: relative;
+    width: 87.5%;
+    height: 100vh;
+    margin-left: auto; }
+    @media screen and (max-width: 768px) {
+      .l-mv-inn-image {
+        width: 80%;
+        height: 65vh; } }
+  .l-mv-inn-ttl {
+    position: absolute;
+    width: 35%;
+    left: -5px;
+    top: 52%;
+    mix-blend-mode: luminosity;
+    z-index: 9; }
+    @media screen and (max-width: 768px) {
+      .l-mv-inn-ttl {
+        width: 60%;
+        left: 0%;
+        top: 58%;
+        margin-left: 27px; } }
+  .l-mv-inn-infotxt {
+    padding-top: 80px; }
+    @media screen and (max-width: 768px) {
+      .l-mv-inn-infotxt {
+        padding-top: 40px;
+        margin-left: 10px; } }
+    .l-mv-inn-infotxt span {
+      display: inline-block;
+      padding: 0 3px;
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: #fff;
+      background-color: #000;
+      letter-spacing: 0.05em; }
+      @media screen and (max-width: 768px) {
+        .l-mv-inn-infotxt span {
+          display: inline;
+          background-color: #231815;
+          line-height: 1.7;
+          font-size: 15px;
+          font-size: 1.5rem; } }
+
+.sl-about-inn-company-ttl {
+  font-size: 33px;
+  font-size: 3.3rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2;
+  color: #f8bb2c;
+  margin-bottom: 30px; }
+  .sl-about-inn-company-ttl small {
+    font-size: 10px;
+    font-size: 1.0rem;
+    letter-spacing: 0.05em;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    color: #f7dda9;
+    padding-left: 20px; }
+.sl-about-inn-company-fl {
+  justify-content: space-between;
+  max-width: 782px;
+  width: 80%; }
+  .sl-about-inn-company-fl .company {
+    width: 48%; }
+    .sl-about-inn-company-fl .company dl {
+      display: flex;
+      border-bottom: 1px solid #999999;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      color: #231815;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 2;
+      letter-spacing: 0.05em;
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: 400; }
+    .sl-about-inn-company-fl .company dt {
+      width: 83px; }
+
+.title01 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: l 0.6; }
+  .title01:after {
+    content: "";
+    width: 10px;
+    height: 1.5px;
+    background: #f8bb2c;
+    display: block;
+    float: left; }
+
+@media screen and (max-width: 768px) {
+  .l-ft {
+    margin-top: 40px; } }
+.l-ft-inn {
+  padding: 25px 0 15px; }
+  @media screen and (max-width: 768px) {
+    .l-ft-inn {
+      padding: 20px 0;
+      background-color: #000; } }
+.l-ft .copyright {
+  padding-left: 50px;
+  font-size: 10px;
+  font-size: 1.0rem;
+  font-family: "gill-sans-nova", sans-serif;
+  letter-spacing: 0.05em;
+  color: #adadad; }
+  @media screen and (max-width: 768px) {
+    .l-ft .copyright {
+      padding-left: 0;
+      color: #fff;
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
