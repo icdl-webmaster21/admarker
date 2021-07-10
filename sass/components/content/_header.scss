@@ -299,7 +299,7 @@
         }
         .hd-copy {
                 position: absolute;
-                left: 30px;
+                left: 0;
                 right: 0;
                 bottom: 10px;
                 margin: 0 auto;
@@ -308,7 +308,6 @@
                 font-size: 1.0rem;
                 letter-spacing: 0.05em;
                 @include mqSp() {
-                    left: 0;
                     bottom: 0;
                 }
             
