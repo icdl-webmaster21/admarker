@@ -1,0 +1,64 @@
+.sl {
+    &-service {
+        &-inn {
+            width: 80%;
+            margin: 0 auto;
+            &-list {
+                &-step {
+                    .step-box {
+                        padding: 0 40px;
+                        border-right: 1px solid #777777;
+                        &.step01 {
+                            padding: 0 40px 0 20px;
+                        }
+                        &.step02 {
+                            padding: 20px 40px 0 40px;
+                        }
+                        span {
+                            display: block;
+                            color: #f8bb2c;
+                        }
+                        .step-num {
+                            padding-bottom: 20px;
+                            font-size: 20px;
+                            font-size: 2.0rem;
+                            font-family: "BodoniSvtyTwoITCTT";
+                            font-weight: bold;
+                        }
+                        .step-ttl01 {
+                            padding-bottom: 20px;
+                            font-size: 33px;
+                            font-size: 3.3rem;
+                            font-family: "BodoniSvtyTwoITCTT";
+                            font-weight: bold;
+                        }
+                        .step-ttl02 {
+                            padding-bottom: 30px;
+                            font-size: 11px;
+                            font-size: 1.1rem;
+                            font-family: $jpfont;
+                            letter-spacing: 0.05em;
+                        }
+                        ul {
+                            li {
+                                margin-bottom: 20px;
+                                a {
+                                    color: #231815;
+                                   font-size: 12px;
+                                   font-size: 1.2rem;
+                                   letter-spacing: 0.05em;
+                                }
+                            }
+                        }
+                        .step-link {
+                            display: block;
+                            width: 28px;
+                            margin: 0 auto;
+                            padding: 70px 0 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
