@@ -108,6 +108,9 @@ img {
     .pc {
       display: none; } }
 
+@font-face {
+  font-family: "BodoniSvtyTwoITCTT";
+  src: url("../font/BodoniSvtyTwoITCTT.ttf"); }
 .l-hd {
   width: 20%;
   max-width: 280px;
