@@ -40,7 +40,7 @@
                         top: 0;
                         left: 0;
                         opacity: 0;
-                        object-fit: contain;
+                        object-fit: cover;
                         object-position: center;
                         overflow: hidden;
                         transform: scale(2) rotate(-35deg);
@@ -76,13 +76,6 @@
                 bottom: 165px;
                 mix-blend-mode: luminosity;
                 z-index: 9;
-                // h2 {
-                //     font-size: 63px;
-                //     font-family: $enfont;
-                //     font-weight: 700;
-                //     letter-spacing: 0.3em;
-                //     text-shadow: 10px 5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
-                // }
                 @include mqSp() {
                     width: 85%;
                     left: 5%;

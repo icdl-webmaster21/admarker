@@ -3,16 +3,67 @@
         &-inn {
             width: 80%;
             margin: 0 auto;
+            padding-bottom: 15%;
+            @include mqSp() {
+                width: 90%;
+                padding-bottom: 0;
+            }
             &-list {
                 &-step {
+                    flex-flow: nowrap;
+                    @include mqSp() {
+                        flex-flow: wrap;
+                    }
                     .step-box {
+                        position: relative;
                         padding: 0 40px;
-                        border-right: 1px solid #777777;
-                        &.step01 {
-                            padding: 0 40px 0 20px;
+                        box-sizing: border-box;
+                        @include mqSp() {
+                            width: 50%;
+                            margin-bottom: 20%;
                         }
-                        &.step02 {
-                            padding: 20px 40px 0 40px;
+                        &:nth-child(2n) {
+                            @include mqSp() {
+                                &::after {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 1px;
+                            height: 116%;
+                            background-color: #777777;
+                            @include mqSp() {
+                                height: 111%;
+                            }
+                        }
+                        &:nth-child(1) {
+                            padding: 0 40px 0 20px;
+                            @include mqSp() {
+                                padding: 0;
+                            }
+                        }
+                        &:nth-child(2) {
+                            padding: 20px 40px 0;
+                            @include mqSp() {
+                                padding: 0 10px;
+                            }
+                        }
+                        &:nth-child(3) {
+                            padding: 40px 40px 0;
+                            @include mqSp() {
+                                padding: 0;
+                            }
+                        }
+                        &:nth-child(4) {
+                            padding: 60px 40px 0;
+                            @include mqSp() {
+                                padding: 0 10px;
+                            }
                         }
                         span {
                             display: block;
@@ -22,15 +73,21 @@
                             padding-bottom: 20px;
                             font-size: 20px;
                             font-size: 2.0rem;
-                            font-family: "BodoniSvtyTwoITCTT";
+                            font-family: $bodonifont;
                             font-weight: bold;
+                            @include mqSp() {
+                                font-size: 18px;
+                            }
                         }
                         .step-ttl01 {
                             padding-bottom: 20px;
                             font-size: 33px;
                             font-size: 3.3rem;
-                            font-family: "BodoniSvtyTwoITCTT";
+                            font-family: $bodonifont;
                             font-weight: bold;
+                            @include mqSp() {
+                                font-size: 28px;
+                            }
                         }
                         .step-ttl02 {
                             padding-bottom: 30px;
@@ -38,25 +95,86 @@
                             font-size: 1.1rem;
                             font-family: $jpfont;
                             letter-spacing: 0.05em;
+                            @include mqSp() {
+                                font-size: 10px;
+                            }
                         }
                         ul {
                             li {
                                 margin-bottom: 20px;
+                                @include mqSp() {
+                                    margin-bottom: 10px;
+                                }
                                 a {
                                     color: #231815;
-                                   font-size: 12px;
-                                   font-size: 1.2rem;
-                                   letter-spacing: 0.05em;
+                                    font-size: 12px;
+                                    font-size: 1.2rem;
+                                    letter-spacing: 0.05em;
+                                    &:hover {
+                                        color: #f8bb2c;
+                                        @include mqSp() {
+                                            color: #231815;
+                                        }
+                                    }
                                 }
                             }
                         }
                         .step-link {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: -50px;
                             display: block;
                             width: 28px;
                             margin: 0 auto;
-                            padding: 70px 0 11px;
+                            @include mqSp() {
+                                bottom: -30px;
+                            }
                         }
                     }
+                }
+            }
+            &.details {
+                width: 90%;
+                margin: 0 0 0 auto;
+            }
+            &-tablist {
+                margin-right: 85px;
+                align-items: center;
+                margin-bottom: 50px;
+                .title01 {
+                    margin-bottom: 0;
+                }
+                ul {
+                    margin-left: auto;
+                    li {
+                        margin: 0 8px;
+                        a {
+                            font-size: 12px;
+                            font-size: 1.2rem;
+                            font-family: $enfont;
+                            letter-spacing: 0.05em;
+                            font-weight: 500;
+                            color: #b2b2b2;
+                            &:hover {
+                                color: #f8bb2c;
+                            }
+                        }
+                    }
+                }
+            }
+            &-content {
+                &-info {
+                    h3 {
+                        color: #eaeaea;
+                        font-size: 130px;
+                        font-size: 13.0rem;
+                        font-weight: 700;
+                        font-family: $bodonifont;
+                    }
+                }
+                &-fl {
+                    flex-flow: nowrap;
                 }
             }
         }

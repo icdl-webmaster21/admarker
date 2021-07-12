@@ -1,13 +1,28 @@
 .l {
     &-ft {
+       
         @include mqSp() {
             margin-top: 40px;
         }
         &-inn {
+            position: relative;
             padding: 25px 0 15px;
             @include mqSp() {
-                padding: 20px 0;
+                padding: 57px 0 20px;
                 background-color: #000;
+            }
+            &-top {
+                position: absolute;
+                padding: 20px 0;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: #f8bb2c;
+                .top-btn {
+                    display: block;
+                    max-width: 30px;
+                    margin: 0 auto;
+                }
             }
             &-menu {
                 padding-bottom: 25px;

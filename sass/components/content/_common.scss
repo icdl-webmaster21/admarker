@@ -18,7 +18,7 @@
     font-family: $enfont;
     font-weight: 500;
     letter-spacing: 0.2em;
-    line-height: l.6;
+    line-height: 1.6;
     margin-bottom: 50px;
     color: #231815;
     &:after {
@@ -48,6 +48,7 @@
             position: absolute;
             top: 335px;
             left: 5.7%;
+            z-index: -1;
         }
     }
 }

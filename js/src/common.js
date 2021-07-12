@@ -1,3 +1,4 @@
+//service side-bar
 $('.more-service .plus').click(function(e) {
     e.preventDefault();
     var $this = $(this);
@@ -21,33 +22,23 @@ $('.menu-bar').on('click', function() {
     $('.l-hd-inn-logo').toggleClass('hide');
 });
 
+// for go to top
+$('.l-ft-inn-top').click(function() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 300);
+    return false;
+});
+
+// switch images for top page
 $('.sub-menu-02 li a').hover(
     function() {
         $('img.' + $(this).attr('class')).addClass('hovered');
         $('.l-mv-inn-image').addClass('unset');
     },
-    
+
     function() {
         $('img.' + $(this).attr('class')).removeClass('hovered');
         $('.l-mv-inn-image').removeClass('unset');
-    });
-
-// $(".l-mv-inn-image").vegas({
-//     overlay: true,
-//     transition: 'fade',
-//     transitionDuration: 3000,
-//     delay: 9000,
-//     animation: 'random',
-//     animationDuration: 10000,
-//     slides: [
-//         { src: "images/slide1.png" },
-//         { src: "images/slide2.png" },
-//         { src: "images/slide3.png" },
-//         { src: "images/slide4.png" },
-//         { src: "images/slide5.png" },
-//         { src: "images/slide6.png" },
-//         { src: "images/slide7.png" },
-//         { src: "images/slide8.png" },
-//         { src: "images/slide9.png" }
-//     ]
-// });
+    }
+);
