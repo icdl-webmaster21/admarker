@@ -30,7 +30,7 @@
                 }
                 @include mqSp {
                     width: 80%;
-                    height: 65vh;
+                    height: 70vh;
                 }
                 .slide-img {
                     img {
@@ -65,7 +65,7 @@
                             -moz-transition: all 1000ms ease;
                             -ms-transition: all 1000ms ease;
                             -o-transition: all 1000ms ease;
-}
+                        }
                     }
                 }
             }
@@ -76,11 +76,18 @@
                 bottom: 165px;
                 mix-blend-mode: luminosity;
                 z-index: 9;
+                // h2 {
+                //     font-size: 63px;
+                //     font-family: $enfont;
+                //     font-weight: 700;
+                //     letter-spacing: 0.3em;
+                //     text-shadow: 10px 5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
+                // }
                 @include mqSp() {
-                    width: 60%;
-                    left: 0%;
-                    bottom: 100px;
-                    margin-left: 27px;
+                    width: 85%;
+                    left: 5%;
+                    bottom: 86px;
+                    mix-blend-mode: multiply;
                 }
             }
             &-infotxt {

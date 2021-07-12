@@ -443,7 +443,7 @@ img {
     @media screen and (max-width: 768px) {
       .l-mv-inn-image {
         width: 80%;
-        height: 65vh; } }
+        height: 70vh; } }
     .l-mv-inn-image .slide-img img {
       position: absolute;
       width: 100%;
@@ -485,10 +485,10 @@ img {
     z-index: 9; }
     @media screen and (max-width: 768px) {
       .l-mv-inn-ttl {
-        width: 60%;
-        left: 0%;
-        bottom: 100px;
-        margin-left: 27px; } }
+        width: 85%;
+        left: 5%;
+        bottom: 86px;
+        mix-blend-mode: multiply; } }
   .l-mv-inn-infotxt {
     padding-top: 80px; }
     @media screen and (max-width: 768px) {
