@@ -749,25 +749,31 @@ img {
             bottom: -30px; } }
   .sl-service-inn.details {
     width: 90%;
-    margin: 0 0 0 auto; }
+    margin: 0 0 0 auto;
+    padding-bottom: 80px; }
   .sl-service-inn-tablist {
     margin-right: 85px;
     align-items: center;
     margin-bottom: 50px; }
     .sl-service-inn-tablist .title01 {
       margin-bottom: 0; }
-    .sl-service-inn-tablist ul {
+    .sl-service-inn-tablist .tabs {
       margin-left: auto; }
-      .sl-service-inn-tablist ul li {
+      .sl-service-inn-tablist .tabs li {
         margin: 0 8px; }
-        .sl-service-inn-tablist ul li a {
+        .sl-service-inn-tablist .tabs li a {
           font-size: 12px;
           font-size: 1.2rem;
           font-family: "Montserrat", sans-serif;
           letter-spacing: 0.05em;
           font-weight: 500;
           color: #b2b2b2; }
-          .sl-service-inn-tablist ul li a:hover {
+          .sl-service-inn-tablist .tabs li a:hover {
+            color: #f8bb2c; }
+            @media screen and (max-width: 768px) {
+              .sl-service-inn-tablist .tabs li a:hover {
+                color: #b2b2b2; } }
+          .sl-service-inn-tablist .tabs li a.active {
             color: #f8bb2c; }
   .sl-service-inn-content-info h3 {
     position: relative;
@@ -775,14 +781,43 @@ img {
     font-size: 130px;
     font-size: 13.0rem;
     font-weight: 700;
-    font-family: "BodoniSvtyTwoITCTT", sans-serif; }
+    font-family: "BodoniSvtyTwoITCTT", sans-serif;
+    z-index: 1; }
   .sl-service-inn-content-fl {
     position: relative;
-    flex-flow: nowrap; }
+    flex-flow: nowrap;
+    justify-content: space-between; }
+    .sl-service-inn-content-fl ul {
+      padding-top: 70px; }
+      .sl-service-inn-content-fl ul li {
+        margin-bottom: 20px; }
+        .sl-service-inn-content-fl ul li a {
+          font-size: 12px;
+          font-size: 1.2rem;
+          letter-spacing: 0.05em; }
+          .sl-service-inn-content-fl ul li a:hover {
+            color: #f8bb2c; }
     .sl-service-inn-content-fl .details-txt {
-      max-width: 365px; }
+      position: absolute;
+      left: 20%;
+      bottom: 20px;
+      max-width: 365px;
+      padding: 15px 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+      font-size: 1.2rem;
+      border: 1px solid #eaeaea;
+      box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.1em;
+      box-sizing: border-box;
+      line-height: 1.8; }
     .sl-service-inn-content-fl .details-img {
       max-width: 532px; }
+      .sl-service-inn-content-fl .details-img img {
+        width: 532px;
+        height: 355px;
+        object-fit: cover;
+        object-position: center; }
 
 @media screen and (max-width: 768px) {
   .l-ft {

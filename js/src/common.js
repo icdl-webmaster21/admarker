@@ -29,16 +29,3 @@ $('.l-ft-inn-top').click(function() {
     }, 300);
     return false;
 });
-
-// switch images for top page
-$('.sub-menu-02 li a').hover(
-    function() {
-        $('img.' + $(this).attr('class')).addClass('hovered');
-        $('.l-mv-inn-image').addClass('unset');
-    },
-
-    function() {
-        $('img.' + $(this).attr('class')).removeClass('hovered');
-        $('.l-mv-inn-image').removeClass('unset');
-    }
-);
