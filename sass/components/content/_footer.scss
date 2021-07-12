@@ -1,17 +1,13 @@
 .l {
     &-ft {
-       
+        position: relative;
         @include mqSp() {
             margin-top: 40px;
         }
-        &-inn {
-            position: relative;
-            padding: 25px 0 15px;
-            @include mqSp() {
-                padding: 57px 0 20px;
-                background-color: #000;
-            }
-            &-top {
+        &-top {
+            display: none;
+            @include mqSp {
+                display: block;
                 position: absolute;
                 padding: 20px 0;
                 width: 100%;
@@ -24,8 +20,17 @@
                     margin: 0 auto;
                 }
             }
+            
+        }
+        &-inn {
+            padding: 25px 0 15px;
+            @include mqSp() {
+                padding: 0;
+                background-color: #000;
+            }
+            
             &-menu {
-                padding-bottom: 25px;
+                padding: 57px 0 25px;
                 &-inner {
                     width: 100%;
                     margin: 0 auto;
@@ -124,6 +129,7 @@
             letter-spacing: 0.05em;
             color: #adadad;
             @include mqSp() {
+                padding: 7px 0;
                 padding-left: 0;
                 color: #fff;
                 text-align: center;

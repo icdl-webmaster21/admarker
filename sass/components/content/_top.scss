@@ -29,8 +29,8 @@
                     background-image: unset;
                 }
                 @include mqSp {
-                    width: 80%;
-                    height: 70vh;
+                    width: 75%;
+                    height: 55vh;
                 }
                 .slide-img {
                     img {
@@ -78,17 +78,10 @@
                 z-index: 9;
                 @include mqSp() {
                     width: 85%;
-                    left: 5%;
-                    bottom: 86px;
+                    left: 8%;
+                    bottom: 90px;
                     mix-blend-mode: multiply;
                 }
-                // h2 {
-                //     font-size: 63px;
-                //     letter-spacing: 0.3em;
-                //     font-weight: 700;
-                //     font-family: $enfont;
-                //     text-shadow: 10px 5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
-                // }
             }
             &-infotxt {
                 padding-top: 40px;
