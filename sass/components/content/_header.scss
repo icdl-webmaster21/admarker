@@ -163,7 +163,7 @@
                     height: 0;
                 }
                 &-inner {
-                    max-width: 160px;
+                    max-width: 180px;
                     padding-top: 50px;
                     @include mqSp() {
                         width: 80%;
@@ -298,32 +298,19 @@
             }
         }
         .hd-copy {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 10px;
-                margin: 0 auto;
-                text-align: center;
-                font-size: 10px;
-                font-size: 1.0rem;
-                letter-spacing: 0.05em;
-                @include mqSp() {
-                    bottom: 0;
-                }
-            
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 10px;
+            font-size: 1.0rem;
+            letter-spacing: 0.05em;
+            @include mqSp() {
+                bottom: 0;
+            }
         }
     }
 }
 
-.site-main {
-    width: 80%;
-    margin-left: auto;
-    padding-top: 60px;
-    @include mqSp() {
-        width: 100%;
-        padding-top: 100px;
-    }
-}
-.noscroll {
-    overflow: hidden;
-}

@@ -241,7 +241,7 @@ img {
         opacity: 0;
         height: 0; } }
     .l-hd-inn-menu-inner {
-      max-width: 160px;
+      max-width: 180px;
       padding-top: 50px; }
       @media screen and (max-width: 768px) {
         .l-hd-inn-menu-inner {
@@ -379,22 +379,6 @@ img {
 .noscroll {
   overflow: hidden; }
 
-.sl .site-main {
-  position: relative;
-  z-index: 1; }
-  .sl .site-main:after {
-    content: "";
-    height: 170px;
-    max-width: 816px;
-    width: 80%;
-    background-image: url("../images/bg-logo.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 335px;
-    left: 5.7%; }
-
 .title01 {
   font-size: 14px;
   font-size: 1.4rem;
@@ -413,6 +397,22 @@ img {
     float: left;
     margin-top: 20px; }
 
+.sl .site-main {
+  position: relative;
+  z-index: 1; }
+  .sl .site-main:after {
+    content: "";
+    height: 170px;
+    max-width: 816px;
+    width: 80%;
+    background-image: url("../images/bg-logo.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 335px;
+    left: 5.7%; }
+
 .l-mv-inn {
   position: relative;
   width: 100%;
@@ -425,13 +425,57 @@ img {
       box-sizing: border-box; } }
   .l-mv-inn-image {
     position: relative;
-    width: 87.5%;
-    height: 100vh;
-    margin-left: auto; }
+    width: 87.7%;
+    min-height: 463px;
+    margin-left: auto;
+    background-image: url("../images/mv-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all 1000ms ease;
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease; }
+    .l-mv-inn-image.unset {
+      background-image: unset; }
     @media screen and (max-width: 768px) {
       .l-mv-inn-image {
         width: 80%;
         height: 65vh; } }
+    .l-mv-inn-image .slide-img img {
+      position: absolute;
+      width: 100%;
+      height: 463px;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      object-fit: contain;
+      object-position: center;
+      overflow: hidden;
+      transform: scale(2) rotate(-35deg);
+      -webkit-transform: scale(2) rotate(-35deg);
+      -moz-transform: scale(2) rotate(-35deg);
+      -ms-transform: scale(2) rotate(-35deg);
+      -o-transform: scale(2) rotate(-35deg);
+      transition: all 1000ms ease;
+      -webkit-transition: all 1000ms ease;
+      -moz-transition: all 1000ms ease;
+      -ms-transition: all 1000ms ease;
+      -o-transition: all 1000ms ease; }
+      .l-mv-inn-image .slide-img img.hovered {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        -webkit-transform: scale(1) rotate(0deg);
+        -moz-transform: scale(1) rotate(0deg);
+        -ms-transform: scale(1) rotate(0deg);
+        -o-transform: scale(1) rotate(0deg);
+        transition: all 1000ms ease;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease; }
   .l-mv-inn-ttl {
     position: absolute;
     width: 35%;
