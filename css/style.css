@@ -770,13 +770,19 @@ img {
           .sl-service-inn-tablist ul li a:hover {
             color: #f8bb2c; }
   .sl-service-inn-content-info h3 {
+    position: relative;
     color: #eaeaea;
     font-size: 130px;
     font-size: 13.0rem;
     font-weight: 700;
     font-family: "BodoniSvtyTwoITCTT", sans-serif; }
   .sl-service-inn-content-fl {
+    position: relative;
     flex-flow: nowrap; }
+    .sl-service-inn-content-fl .details-txt {
+      max-width: 365px; }
+    .sl-service-inn-content-fl .details-img {
+      max-width: 532px; }
 
 @media screen and (max-width: 768px) {
   .l-ft {

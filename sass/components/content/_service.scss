@@ -166,6 +166,7 @@
             &-content {
                 &-info {
                     h3 {
+                        position: relative;
                         color: #eaeaea;
                         font-size: 130px;
                         font-size: 13.0rem;
@@ -174,7 +175,14 @@
                     }
                 }
                 &-fl {
+                    position: relative;
                     flex-flow: nowrap;
+                    .details-txt {
+                        max-width: 365px;
+                    }
+                    .details-img {
+                        max-width: 532px;
+                    }
                 }
             }
         }
