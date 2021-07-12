@@ -1,0 +1,53 @@
+.site-main {
+    width: 80%;
+    margin-left: auto;
+    padding-top: 60px;
+    @include mqSp() {
+        width: 100%;
+        padding-top: 100px;
+    }
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.title01 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: $enfont;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    line-height: l.6;
+    margin-bottom: 50px;
+    color: #231815;
+    &:after {
+        content: "";
+        width: 10px;
+        height: 1.5px;
+        background: #f8bb2c;
+        display: block;
+        float: left;
+        margin-top: 20px;
+    }
+}
+
+.sl {
+    .site-main {
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            height: 170px;
+            max-width: 816px;
+            width: 80%;
+            background-image: url('../images/bg-logo.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 335px;
+            left: 5.7%;
+        }
+    }
+}

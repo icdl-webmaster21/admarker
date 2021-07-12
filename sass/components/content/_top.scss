@@ -4,7 +4,7 @@
             position: relative;
             width: 100%;
             margin: 0 auto;
-            padding-bottom: 30px;
+            padding-bottom: 70px;
             padding-right: 50px;
             @include mqSp() {
                 padding: 0 10px;
@@ -12,26 +12,82 @@
             }
             &-image {
                 position: relative;
-                width: 87.5%;
-                height: 100vh;
+                width: 87.7%;
+                min-height: 463px;
                 margin-left: auto;
+                background-image: url('../images/mv-img.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                transition: all 1000ms ease;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                &.unset {
+                    background-image: unset;
+                }
                 @include mqSp {
                     width: 80%;
-                    height: 65vh;
+                    height: 70vh;
+                }
+                .slide-img {
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 463px;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        object-fit: contain;
+                        object-position: center;
+                        overflow: hidden;
+                        transform: scale(2) rotate(-35deg);
+                        -webkit-transform: scale(2) rotate(-35deg);
+                        -moz-transform: scale(2) rotate(-35deg);
+                        -ms-transform: scale(2) rotate(-35deg);
+                        -o-transform: scale(2) rotate(-35deg);
+                        transition: all 1000ms ease;
+                        -webkit-transition: all 1000ms ease;
+                        -moz-transition: all 1000ms ease;
+                        -ms-transition: all 1000ms ease;
+                        -o-transition: all 1000ms ease;
+                        &.hovered {
+                            opacity: 1;
+                            transform: scale(1) rotate(0deg);
+                            -webkit-transform: scale(1) rotate(0deg);
+                            -moz-transform: scale(1) rotate(0deg);
+                            -ms-transform: scale(1) rotate(0deg);
+                            -o-transform: scale(1) rotate(0deg);
+                            transition: all 1000ms ease;
+                            -webkit-transition: all 1000ms ease;
+                            -moz-transition: all 1000ms ease;
+                            -ms-transition: all 1000ms ease;
+                            -o-transition: all 1000ms ease;
+                        }
+                    }
                 }
             }
             &-ttl {
                 position: absolute;
                 width: 35%;
-                left: -5px;
-                top: 52%;
+                left: -9px;
+                bottom: 165px;
                 mix-blend-mode: luminosity;
                 z-index: 9;
+                // h2 {
+                //     font-size: 63px;
+                //     font-family: $enfont;
+                //     font-weight: 700;
+                //     letter-spacing: 0.3em;
+                //     text-shadow: 10px 5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
+                // }
                 @include mqSp() {
-                    width: 60%;
-                    left: 0%;
-                    top: 58%;
-                    margin-left: 27px;
+                    width: 85%;
+                    left: 5%;
+                    bottom: 86px;
+                    mix-blend-mode: multiply;
                 }
             }
             &-infotxt {
