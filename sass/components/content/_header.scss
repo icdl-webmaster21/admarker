@@ -23,8 +23,6 @@
             z-index: 99;
         }
         &-inn {
-            position: relative;
-            height: 100%;
             margin-top: 60px;
             padding-left: 40px;
             @include mqSp() {
@@ -77,9 +75,10 @@
                     }
                 }
                 h1 {
-                    width: 200px;
+                    width: 100%;
+                    max-width: 200px;
                     @include mqSp() {
-                        width: 130px;
+                        max-width: 130px;
                     }
                 }
             }
@@ -209,8 +208,8 @@
                     }
                     .plus {
                         display: inline-block;
-                        width: 20px;
-                        height: 20px;
+                        width: 15px;
+                        height: 15px;
                         background: linear-gradient(#000, #000), linear-gradient(#000, #000);
                         background-position: center;
                         background-size: 45% 1px, 1px 45%;
@@ -230,8 +229,8 @@
                     }
                     .minus {
                         display: inline-block;
-                        width: 20px;
-                        height: 20px;
+                        width: 15px;
+                        height: 15px;
                         background: linear-gradient(#000, #000), linear-gradient(#000, #000);
                         background-position: center;
                         background-size: 1px 45%;
@@ -252,6 +251,10 @@
                     }
                     .menu-list {
                         display: none;
+                        &.services {
+                            margin-top: 10px;
+                            border-top: 1px solid #000000;
+                        }
                         &.show {
                             display: block;
                         }
@@ -271,6 +274,7 @@
                                 }
                             }
                             &-02 {
+                                margin-bottom: 25px;
                                 padding-left: 10px;
                                 li {
                                     margin: 10px 0;
