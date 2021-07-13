@@ -21,11 +21,15 @@
         padding-left: 72px;
         position: relative;
         z-index: 1;
+        @include mqSp() {
+            padding: 0;
+        }
         &-inn {
             max-width: 782px;
             width: 95%;
             @include mqSp() {
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
             }
             &-company {
                 &-ttl {

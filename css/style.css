@@ -532,12 +532,16 @@ img {
   padding-left: 72px;
   position: relative;
   z-index: 1; }
+  @media screen and (max-width: 768px) {
+    .sl-about {
+      padding: 0; } }
   .sl-about-inn {
     max-width: 782px;
     width: 95%; }
     @media screen and (max-width: 768px) {
       .sl-about-inn {
-        width: 100%; } }
+        width: 90%;
+        margin: 0 auto; } }
     .sl-about-inn-company-ttl {
       font-size: 33px;
       font-size: 3.3rem;
@@ -698,8 +702,17 @@ img {
       -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: vertical-lr;
       transform: rotate(-180deg); }
+  @media screen and (max-width: 768px) {
+    .sl-recruit-inn-ttl {
+      width: 90%;
+      margin: 0 auto 50px; } }
   .sl-recruit-inn-content {
     padding: 20px 0 20px 30px; }
+    @media screen and (max-width: 768px) {
+      .sl-recruit-inn-content {
+        padding: 20px 0;
+        width: 90%;
+        margin: 0 auto; } }
     .sl-recruit-inn-content h3 {
       font-size: 17px;
       font-size: 1.7rem;
@@ -722,6 +735,10 @@ img {
     background: #fffdf3;
     padding: 50px 7% 30px 30px;
     margin-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      .sl-recruit-inn-fl {
+        width: 100%;
+        padding: 40px 20px 30px; } }
     .sl-recruit-inn-fl .list {
       margin-bottom: 20px;
       border-bottom: 1px solid #999999;
@@ -729,8 +746,14 @@ img {
       flex-wrap: nowrap;
       color: #231815;
       font-family: "Noto Sans JP", sans-serif; }
+      @media screen and (max-width: 768px) {
+        .sl-recruit-inn-fl .list {
+          padding: 0 10px; } }
       .sl-recruit-inn-fl .list .l-side {
         width: 190px; }
+        @media screen and (max-width: 768px) {
+          .sl-recruit-inn-fl .list .l-side {
+            width: 130px; } }
         .sl-recruit-inn-fl .list .l-side h3 {
           font-weight: 400;
           font-size: 12px;
@@ -811,6 +834,9 @@ img {
   .sl-recruit-inn-button {
     max-width: 772px;
     width: 90%; }
+    @media screen and (max-width: 768px) {
+      .sl-recruit-inn-button {
+        width: 100%; } }
     .sl-recruit-inn-button a {
       display: block;
       width: 304px;
@@ -833,7 +859,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   overflow-y: scroll; }
   .sl-entry-inn {
     max-width: 600px;
@@ -842,6 +868,10 @@ img {
     border: 2px solid #f8bb2c;
     border-top: none;
     background: #fffdf3; }
+    @media screen and (max-width: 768px) {
+      .sl-entry-inn {
+        width: 85%;
+        margin: 120px auto 50px; } }
     .sl-entry-inn-button {
       border-bottom: 2px solid #f8bb2c; }
       .sl-entry-inn-button p {
@@ -854,6 +884,10 @@ img {
         padding: 11px 0;
         font-family: "Noto Sans JP", sans-serif;
         text-align: center; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-button p {
+            font-size: 1.4rem;
+            padding: 8px 0; } }
         .sl-entry-inn-button p:first-child {
           color: #fff;
           background: #f8bb2c; }
@@ -863,6 +897,9 @@ img {
     .sl-entry-inn-form {
       padding: 50px 60px 10px;
       font-weight: 400; }
+      @media screen and (max-width: 768px) {
+        .sl-entry-inn-form {
+          padding: 35px 20px 10px; } }
       .sl-entry-inn-form p {
         margin-bottom: 40px;
         display: flex;
@@ -893,6 +930,9 @@ img {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-form input {
+            width: 68%; } }
       .sl-entry-inn-form textarea {
         width: 70%;
         height: 124px;
