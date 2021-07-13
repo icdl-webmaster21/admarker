@@ -21,6 +21,14 @@ $('.menu-bar').on('click', function() {
     $('.l-hd-inn-logo').toggleClass('hide');
 });
 
+//////Entry Modal
+$('#entry-button').click(function(event) {
+    event.preventDefault();
+    $("#entry").fadeIn();
+});
+$('#about-recruit').click(function() {
+    $("#entry").fadeOut();
+});
 
 $(".l-mv-inn-image").vegas({
     overlay: true,
