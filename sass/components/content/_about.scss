@@ -57,7 +57,7 @@
                 &-fl {
                     justify-content: space-between;
                     @include mqSp() {
-                        padding: 0 20px;
+                        padding: 0 10px;
                     }
                     .company {
                         width: 46%;
@@ -97,7 +97,7 @@
                     margin-bottom: 80px;
                     border-bottom: 1px solid #999999;
                     @include mqSp {
-                        padding: 0 20px;
+                        padding: 0 10px;
                         margin-bottom: 50px;
                         border-bottom: none;
                     }
@@ -118,7 +118,7 @@
                         padding: 0 0 50px 20px;
                         @include mqSp() {
                             width: 100%;
-                            padding: 0 0 40px;
+                            padding: 0 10px 40px;
                             border-bottom: 1px solid #999999;
                         }
                     }
@@ -159,6 +159,7 @@
                     @include mqSp() {
                         width: 100%;
                         max-width: 100%;
+                        padding: 0 10px 40px;
                     }
                 }
             }

@@ -566,7 +566,7 @@ img {
       justify-content: space-between; }
       @media screen and (max-width: 768px) {
         .sl-about-inn-company-fl {
-          padding: 0 20px; } }
+          padding: 0 10px; } }
       .sl-about-inn-company-fl .company {
         width: 46%; }
         @media screen and (max-width: 768px) {
@@ -600,7 +600,7 @@ img {
       border-bottom: 1px solid #999999; }
       @media screen and (max-width: 768px) {
         .sl-about-inn-company-chart {
-          padding: 0 20px;
+          padding: 0 10px;
           margin-bottom: 50px;
           border-bottom: none; } }
       .sl-about-inn-company-chart h4 {
@@ -620,7 +620,7 @@ img {
         @media screen and (max-width: 768px) {
           .sl-about-inn-company-chart figure {
             width: 100%;
-            padding: 0 0 40px;
+            padding: 0 10px 40px;
             border-bottom: 1px solid #999999; } }
     @media screen and (max-width: 768px) {
       .sl-about-inn-access-fl {
@@ -652,7 +652,8 @@ img {
       @media screen and (max-width: 768px) {
         .sl-about-inn-access-address {
           width: 100%;
-          max-width: 100%; } }
+          max-width: 100%;
+          padding: 0 10px 40px; } }
 
 .title01 {
   font-size: 14px;
