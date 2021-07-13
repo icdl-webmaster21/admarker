@@ -21,6 +21,11 @@
     line-height: 1.6;
     margin-bottom: 50px;
     color: #231815;
+    @include mqSp() {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+    
     &:after {
         content: "";
         width: 10px;
@@ -29,6 +34,9 @@
         display: block;
         float: left;
         margin-top: 20px;
+        @include mqSp() {
+            margin-top: 10px;
+        }
     }
 }
 
@@ -49,6 +57,9 @@
             top: 335px;
             left: 5.7%;
             z-index: -1;
+            @include mqSp {
+                display: none;
+            }
         }
     }
 }

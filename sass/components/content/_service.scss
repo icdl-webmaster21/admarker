@@ -1,14 +1,18 @@
 .sl {
     &-service {
+        
         &-inn {
             width: 80%;
             margin: 0 auto;
             padding-bottom: 15%;
             @include mqSp() {
-                width: 90%;
-                padding-bottom: 0;
+                width: 100%;
+                padding: 0 20px;
             }
             &-list {
+                @include mqSp() {
+                    margin-bottom: 20px;
+                }
                 &-step {
                     flex-flow: nowrap;
                     @include mqSp() {
@@ -132,18 +136,34 @@
                 width: 90%;
                 margin: 0 0 0 auto;
                 padding-bottom: 80px;
+                @include mqSp {
+                    width: 100%;
+                    padding: 0 0 0 20px;
+                    margin: 0 auto 50px;
+                }
             }
             &-tablist {
                 margin-right: 85px;
                 align-items: center;
                 margin-bottom: 50px;
+                @include mqSp {
+                    display: block;
+                    margin-right: 0;
+                }
                 .title01 {
                     margin-bottom: 0;
                 }
                 .tabs {
                     margin-left: auto;
+                    @include mqSp() {
+                        margin-top: 40px;
+                        justify-content: center;
+                    }
                     li {
                         margin: 0 8px;
+                        @include mqSp() {
+                            margin: 0 5px;
+                        }
                         a {
                             font-size: 12px;
                             font-size: 1.2rem;
@@ -151,14 +171,18 @@
                             letter-spacing: 0.05em;
                             font-weight: 500;
                             color: #b2b2b2;
+                            @include mqSp() {
+                                font-size: 10px;
+                                font-size: 1.0rem;
+                            }
                             &:hover {
                                 color: #f8bb2c;
                                 @include mqSp() {
-                                    color: #b2b2b2;  
+                                    color: #b2b2b2;
                                 }
                             }
                             &.active {
-                                color: #f8bb2c;  
+                                color: #f8bb2c;
                             }
                         }
                     }
@@ -174,14 +198,28 @@
                         font-weight: 700;
                         font-family: $bodonifont;
                         z-index: 1;
+                        @include mqSp() {
+                            position: absolute;
+                            font-size: 60px;
+                            font-size: 6.0rem;
+                            top: 42%;
+                        }
                     }
                 }
                 &-fl {
                     position: relative;
                     flex-flow: nowrap;
                     justify-content: space-between;
+                    @include mqSp {
+                        flex-flow: wrap;
+                    }
                     ul {
+                        width: 180px;
                         padding-top: 70px;
+                        @include mqSp() {
+                            width: 100%;
+                            padding-top: 50px;
+                        }
                         li {
                             margin-bottom: 20px;
                             a {
@@ -208,14 +246,29 @@
                         letter-spacing: 0.1em;
                         box-sizing: border-box;
                         line-height: 1.8;
+                        @include mqSp() {
+                            width: 92%;
+                            position: unset;
+                            left: 0;
+                            margin-top: 10px;
+                        }
                     }
                     .details-img {
+                        width: 55%;
                         max-width: 532px;
+                        @include mqSp() {
+                            width: 90%;
+                            max-width: 100%;
+                            margin-left: auto;
+                        }
                         img {
-                            width: 532px;
+                            width: 100%;
                             height: 355px;
                             object-fit: cover;
                             object-position: center;
+                            @include mqSp() {
+                                height: 200px;
+                            }
                         }
                     }
                 }

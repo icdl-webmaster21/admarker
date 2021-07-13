@@ -1,9 +1,6 @@
 .l {
     &-ft {
         position: relative;
-        @include mqSp() {
-            margin-top: 40px;
-        }
         &-top {
             display: none;
             @include mqSp {

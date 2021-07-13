@@ -82,32 +82,34 @@
             }
             &-ttl {
                 position: absolute;
+                width: 35%;
                 left: -9px;
-                bottom: 15.5%;
+                bottom: 15%;
                 mix-blend-mode: luminosity;
                 z-index: 9;
-                h2 {
-                    font-size: 63px;
-                    letter-spacing: 0.3em;
-                    font-family: $enfont;
-                    font-weight: 700;
-                    text-shadow: 10px 5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
-                    @include mqSp() {
-                        font-size: 30px;
-                        font-size: 3.0rem;
-                        text-shadow: 5px 2.5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
-                    }
-                }
+                // h2 {
+                //     font-size: 63px;
+                //     letter-spacing: 0.3em;
+                //     font-family: $enfont;
+                //     font-weight: 700;
+                //     text-shadow: 10px 5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
+                //     @include mqSp() {
+                //         font-size: 30px;
+                //         font-size: 3.0rem;
+                //         text-shadow: 5px 2.5px 0px rgba($color: #f8bb2c, $alpha: 0.6);
+                //     }
+                // }
                 @include mqSp() {
+                    width: 85%;
                     left: 8%;
-                    bottom: 25%;
+                    bottom: 26%;
                     mix-blend-mode: multiply;
                 }
             }
             &-infotxt {
                 padding-top: 40px;
                 @include mqSp() {
-                    padding-top: 15%;
+                    padding-top: 25%;
                     margin-left: 6%;
                 }
                 span {
