@@ -3,6 +3,109 @@
         &-inn {
             width: 80%;
             margin: 0 auto;
+            @include mqSp() {
+                width: 90%;
+            }
+            &-content {
+                padding-top: 30px;
+                &-txt {
+                    margin-bottom: 45px;
+                    h4 {
+                        padding-bottom: 20px;
+                        font-size: 14px;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        letter-spacing: 0.2em;
+                        text-indent: -6px;
+                    }
+                    p {
+                        font-size: 12px;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.05em;
+                        line-height: 1.7;
+                    }
+                    ul {
+                        padding-left: 15px;
+                        font-size: 12px;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.05em;
+                        line-height: 1.7;
+                        li {
+                            position: relative;
+                            margin-bottom: 20px;
+                            &::after {
+                                content: '・';
+                                position: absolute;
+                                top: -5px;
+                                left: -20px;
+                                z-index: 9;
+                                font-size: 17px;
+                            }
+                            table {
+                                width: 100%;
+                                max-width: 787px;
+                                display: block;
+                                padding: 15px 0;
+                                tr {
+                                    th {
+                                        padding-bottom: 7px;
+                                        box-sizing: border-box;
+                                        &:last-child {
+                                            padding-left: 10px;
+                                        }
+                                    }
+                                    td {
+                                        padding: 10px;
+                                        box-sizing: border-box;
+                                        border: 0.5px solid #000;
+                                        vertical-align: middle;
+                                        &:first-child {
+                                            width: 267px;
+                                        }
+                                        &:last-child {
+                                            width: 521px;
+                                        }
+                                    }
+                                }
+                                &.tbl02 {
+                                    tr {
+                                        td {
+                                            &:first-child {
+                                                width: 326px;
+                                            }
+                                            &:last-child {
+                                                width: 462px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            span {
+                                display: block;
+                                text-indent: -6px;
+                            }
+                        }
+                    }
+                    &-01 {
+                        width: 100%;
+                        max-width: 668px;
+                        margin-bottom: 50px;
+                        p {
+                            font-size: 12px;
+                            font-size: 1.2rem;
+                            letter-spacing: 0.05em;
+                            line-height: 1.7;
+                            text-align: right;
+                            &.pp-info {
+                                margin-bottom: 20px;
+                            }
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

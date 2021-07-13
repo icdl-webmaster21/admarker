@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
 License: none (public domain)
@@ -1226,6 +1227,81 @@ img {
 .sl-pp-inn {
   width: 80%;
   margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .sl-pp-inn {
+      width: 90%; } }
+  .sl-pp-inn-content {
+    padding-top: 30px; }
+    .sl-pp-inn-content-txt {
+      margin-bottom: 45px; }
+      .sl-pp-inn-content-txt h4 {
+        padding-bottom: 20px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-indent: -6px; }
+      .sl-pp-inn-content-txt p {
+        font-size: 12px;
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        line-height: 1.7; }
+      .sl-pp-inn-content-txt ul {
+        padding-left: 15px;
+        font-size: 12px;
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        line-height: 1.7; }
+        .sl-pp-inn-content-txt ul li {
+          position: relative;
+          margin-bottom: 20px; }
+          .sl-pp-inn-content-txt ul li::after {
+            content: '・';
+            position: absolute;
+            top: -5px;
+            left: -20px;
+            z-index: 9;
+            font-size: 17px; }
+          .sl-pp-inn-content-txt ul li table {
+            width: 100%;
+            max-width: 787px;
+            display: block;
+            padding: 15px 0; }
+            .sl-pp-inn-content-txt ul li table tr th {
+              padding-bottom: 7px;
+              box-sizing: border-box; }
+              .sl-pp-inn-content-txt ul li table tr th:last-child {
+                padding-left: 10px; }
+            .sl-pp-inn-content-txt ul li table tr td {
+              padding: 10px;
+              box-sizing: border-box;
+              border: 0.5px solid #000;
+              vertical-align: middle; }
+              .sl-pp-inn-content-txt ul li table tr td:first-child {
+                width: 267px; }
+              .sl-pp-inn-content-txt ul li table tr td:last-child {
+                width: 521px; }
+            .sl-pp-inn-content-txt ul li table.tbl02 tr td:first-child {
+              width: 326px; }
+            .sl-pp-inn-content-txt ul li table.tbl02 tr td:last-child {
+              width: 462px; }
+          .sl-pp-inn-content-txt ul li span {
+            display: block;
+            text-indent: -6px; }
+      .sl-pp-inn-content-txt-01 {
+        width: 100%;
+        max-width: 668px;
+        margin-bottom: 50px; }
+        .sl-pp-inn-content-txt-01 p {
+          font-size: 12px;
+          font-size: 1.2rem;
+          letter-spacing: 0.05em;
+          line-height: 1.7;
+          text-align: right; }
+          .sl-pp-inn-content-txt-01 p.pp-info {
+            margin-bottom: 20px; }
+          .sl-pp-inn-content-txt-01 p span {
+            display: block; }
 
 .l-ft {
   position: relative; }
