@@ -20,7 +20,7 @@
                         box-sizing: border-box;
                         @include mqSp() {
                             width: 50%;
-                            margin-bottom: 20%;
+                            margin-bottom: 25%;
                         }
                         &:nth-child(2n) {
                             @include mqSp() {
@@ -37,9 +37,6 @@
                             width: 1px;
                             height: 116%;
                             background-color: #777777;
-                            @include mqSp() {
-                                height: 111%;
-                            }
                         }
                         &:nth-child(1) {
                             padding: 0 40px 0 20px;
@@ -127,9 +124,6 @@
                             display: block;
                             width: 28px;
                             margin: 0 auto;
-                            @include mqSp() {
-                                bottom: -30px;
-                            }
                         }
                     }
                 }

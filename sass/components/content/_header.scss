@@ -1,7 +1,6 @@
 .l {
     &-hd {
-        width: 20%;
-        max-width: 280px;
+        width: 280px;
         position: fixed;
         height: 100%;
         overflow-y: scroll;
@@ -45,14 +44,13 @@
                 overflow-x: hidden;
                 padding: 20px 10px 0 10px;
                 .menu-bar {
-                    width: 40px;
+                    width: 30px;
                 }
                 .l-hd-inn {
                     &-menu {
                         @include mqSp() {
                             visibility: visible;
                             opacity: 1;
-                            height: 100%;
                             li {
                                 a {
                                     color: #fff;
@@ -254,6 +252,9 @@
                         &.services {
                             margin-top: 10px;
                             border-top: 1px solid #000000;
+                            @include mqSp() {
+                                border-top: 1px solid #ffffff;  
+                            }
                         }
                         &.show {
                             display: block;
@@ -311,9 +312,6 @@
             font-size: 10px;
             font-size: 1.0rem;
             letter-spacing: 0.05em;
-            @include mqSp() {
-                bottom: 0;
-            }
         }
     }
 }

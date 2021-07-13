@@ -1,5 +1,5 @@
 .site-main {
-    width: 80%;
+    width: calc(100% - 280px);
     margin-left: auto;
     padding-top: 60px;
     @include mqSp() {

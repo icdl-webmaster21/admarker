@@ -89,6 +89,10 @@
                     }
                     .menu-list {
                         display: none;
+                        &.services {
+                            margin-top: 10px;
+                            border-top: 1px solid #fff;
+                        }
                         &.show {
                             display: block;
                         }
