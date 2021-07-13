@@ -407,24 +407,30 @@ img {
       .title01:after {
         margin-top: 10px; } }
 
-.sl .site-main {
+.sl .sub-bg {
   position: relative;
   z-index: 1; }
-  .sl .site-main:after {
+  .sl .sub-bg.service-bg::after {
+    top: 280px;
+    left: 14%; }
+  .sl .sub-bg.recruit-bg::after {
+    top: 200px;
+    left: 10%; }
+  .sl .sub-bg:after {
     content: "";
     height: 170px;
-    max-width: 816px;
     width: 80%;
+    max-width: 816px;
     background-image: url("../images/bg-logo.svg");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top right;
     position: absolute;
-    top: 335px;
-    left: 5.7%;
+    top: 350px;
+    left: 7%;
     z-index: -1; }
     @media screen and (max-width: 768px) {
-      .sl .site-main:after {
+      .sl .sub-bg:after {
         display: none; } }
 
 @media screen and (max-width: 768px) {
@@ -546,13 +552,14 @@ img {
   z-index: 1; }
   @media screen and (max-width: 768px) {
     .sl-about {
-      padding: 0 20px; } }
+      padding: 0; } }
   .sl-about-inn {
     max-width: 782px;
     width: 95%; }
     @media screen and (max-width: 768px) {
       .sl-about-inn {
-        width: 100%; } }
+        width: 90%;
+        margin: 0 auto; } }
     .sl-about-inn-company-ttl {
       font-size: 33px;
       font-size: 3.3rem;
@@ -577,7 +584,7 @@ img {
       justify-content: space-between; }
       @media screen and (max-width: 768px) {
         .sl-about-inn-company-fl {
-          padding: 0 20px; } }
+          padding: 0 10px; } }
       .sl-about-inn-company-fl .company {
         width: 46%; }
         @media screen and (max-width: 768px) {
@@ -611,7 +618,7 @@ img {
       border-bottom: 1px solid #999999; }
       @media screen and (max-width: 768px) {
         .sl-about-inn-company-chart {
-          padding: 0 20px;
+          padding: 0 10px;
           margin-bottom: 50px;
           border-bottom: none; } }
       .sl-about-inn-company-chart h4 {
@@ -631,7 +638,7 @@ img {
         @media screen and (max-width: 768px) {
           .sl-about-inn-company-chart figure {
             width: 100%;
-            padding: 0 0 40px;
+            padding: 0 10px 40px;
             border-bottom: 1px solid #999999; } }
     @media screen and (max-width: 768px) {
       .sl-about-inn-access-fl {
@@ -664,7 +671,7 @@ img {
         .sl-about-inn-access-address {
           width: 100%;
           max-width: 100%;
-          padding-bottom: 50px; } }
+          padding: 0 10px 50px; } }
 
 .sl-service-inn {
   width: 80%;
@@ -672,8 +679,8 @@ img {
   padding-bottom: 15%; }
   @media screen and (max-width: 768px) {
     .sl-service-inn {
-      width: 100%;
-      padding: 0 20px; } }
+      width: 90%;
+      padding-bottom: 0; } }
   @media screen and (max-width: 768px) {
     .sl-service-inn-list {
       margin-bottom: 20px; } }
@@ -835,7 +842,7 @@ img {
         position: absolute;
         font-size: 60px;
         font-size: 6.0rem;
-        top: 42%; } }
+        top: 55%; } }
   .sl-service-inn-content-fl {
     position: relative;
     flex-flow: nowrap;
@@ -894,6 +901,327 @@ img {
         @media screen and (max-width: 768px) {
           .sl-service-inn-content-fl .details-img img {
             height: 200px; } }
+
+.sl-recruit {
+  width: 100%;
+  padding-left: 72px;
+  position: relative;
+  z-index: 1; }
+  @media screen and (max-width: 768px) {
+    .sl-recruit {
+      padding: 0; } }
+  .sl-recruit-inn-verbutton {
+    background: #ffd071;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 9; }
+    .sl-recruit-inn-verbutton a {
+      display: block;
+      width: 40px;
+      height: 150px;
+      padding: 40px 10px;
+      text-align: center;
+      color: #231815;
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      line-height: 1.6;
+      font-family: "Montserrat", sans-serif;
+      writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: vertical-lr;
+      transform: rotate(-180deg); }
+  @media screen and (max-width: 768px) {
+    .sl-recruit-inn-ttl {
+      width: 90%;
+      margin: 0 auto 50px; } }
+  .sl-recruit-inn-content {
+    padding: 20px 0 20px 30px; }
+    @media screen and (max-width: 768px) {
+      .sl-recruit-inn-content {
+        padding: 20px 0;
+        width: 90%;
+        margin: 0 auto; } }
+    .sl-recruit-inn-content h3 {
+      font-size: 17px;
+      font-size: 1.7rem;
+      letter-spacing: 0.2em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: 400; }
+    .sl-recruit-inn-content p {
+      font-weight: 400;
+      font-size: 12px;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-family: "Noto Sans JP", sans-serif; }
+  .sl-recruit-inn-fl {
+    max-width: 772px;
+    width: 90%;
+    background: #fffdf3;
+    padding: 50px 7% 30px 30px;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      .sl-recruit-inn-fl {
+        width: 100%;
+        padding: 40px 20px 15px;
+        margin-bottom: 0; } }
+    .sl-recruit-inn-fl .list {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #999999;
+      padding: 0 20px;
+      flex-wrap: nowrap;
+      color: #231815;
+      font-family: "Noto Sans JP", sans-serif; }
+      @media screen and (max-width: 768px) {
+        .sl-recruit-inn-fl .list {
+          padding: 0 10px; } }
+      .sl-recruit-inn-fl .list .l-side {
+        width: 190px; }
+        @media screen and (max-width: 768px) {
+          .sl-recruit-inn-fl .list .l-side {
+            width: 130px; } }
+        .sl-recruit-inn-fl .list .l-side h3 {
+          font-weight: 400;
+          font-size: 12px;
+          font-size: 1.2rem;
+          letter-spacing: 0;
+          line-height: 1.6; }
+      .sl-recruit-inn-fl .list .r-side {
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        line-height: 1.6; }
+        .sl-recruit-inn-fl .list .r-side h3 {
+          font-weight: 500;
+          font-size: 14px;
+          font-size: 1.4rem;
+          letter-spacing: 0.1em;
+          line-height: 1.7;
+          margin-bottom: 10px; }
+        .sl-recruit-inn-fl .list .r-side h4 {
+          letter-spacing: 0.1em;
+          line-height: 1.7;
+          background: #f7dda9;
+          padding: 0 7px;
+          margin-bottom: 10px; }
+        .sl-recruit-inn-fl .list .r-side p {
+          padding: 0 0 20px 7px; }
+        .sl-recruit-inn-fl .list .r-side .padB10 {
+          padding-bottom: 10px; }
+        .sl-recruit-inn-fl .list .r-side ul {
+          padding-left: 7px; }
+          .sl-recruit-inn-fl .list .r-side ul li {
+            padding: 0 0 20px 15px;
+            position: relative; }
+            .sl-recruit-inn-fl .list .r-side ul li:before {
+              content: "";
+              width: 10px;
+              height: 10px;
+              background: #231815;
+              position: absolute;
+              top: 5px;
+              left: 0; }
+          .sl-recruit-inn-fl .list .r-side ul.pad00 {
+            padding-bottom: 20px; }
+            .sl-recruit-inn-fl .list .r-side ul.pad00 li {
+              padding: 0 0 0 11px; }
+        .sl-recruit-inn-fl .list .r-side small {
+          display: block;
+          font-size: 10px;
+          font-size: 1.0rem; }
+        .sl-recruit-inn-fl .list .r-side .list-style {
+          position: relative;
+          padding-left: 10px; }
+          .sl-recruit-inn-fl .list .r-side .list-style span {
+            position: absolute;
+            left: 0;
+            top: 0; }
+        .sl-recruit-inn-fl .list .r-side .inline-block {
+          display: inline-block; }
+        .sl-recruit-inn-fl .list .r-side .step-list li {
+          padding: 0 0 15px; }
+          .sl-recruit-inn-fl .list .r-side .step-list li:before {
+            display: none; }
+          .sl-recruit-inn-fl .list .r-side .step-list li span {
+            width: 70px;
+            display: inline-block;
+            color: #fff;
+            font-weight: 500;
+            font-size: 12px;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            line-height: 1.7;
+            background: #edc92f;
+            padding: 0 0 5px;
+            text-align: center;
+            margin-right: 15px; }
+  .sl-recruit-inn-button {
+    max-width: 772px;
+    width: 90%; }
+    @media screen and (max-width: 768px) {
+      .sl-recruit-inn-button {
+        width: 100%; } }
+    .sl-recruit-inn-button a {
+      display: block;
+      width: 304px;
+      margin: 0 auto 40px;
+      padding: 13px;
+      text-align: center;
+      color: #fff;
+      background: #231815;
+      font-size: 28px;
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      line-height: 2;
+      font-family: "Montserrat", sans-serif; }
+      @media screen and (max-width: 768px) {
+        .sl-recruit-inn-button a {
+          margin: 0 auto 50px; } }
+.sl-entry {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll; }
+  .sl-entry-inn {
+    max-width: 600px;
+    width: 80%;
+    margin: 100px auto;
+    border: 2px solid #f8bb2c;
+    border-top: none;
+    background: #fffdf3; }
+    @media screen and (max-width: 768px) {
+      .sl-entry-inn {
+        width: 85%;
+        margin: 120px auto 50px; } }
+    .sl-entry-inn-button {
+      border-bottom: 2px solid #f8bb2c; }
+      .sl-entry-inn-button p {
+        cursor: pointer;
+        width: 50%;
+        font-size: 15px;
+        font-size: 1.5rem;
+        letter-spacing: 0.2em;
+        line-height: 2;
+        padding: 11px 0;
+        font-family: "Noto Sans JP", sans-serif;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-button p {
+            font-size: 1.4rem;
+            padding: 8px 0; } }
+        .sl-entry-inn-button p:first-child {
+          color: #fff;
+          background: #f8bb2c; }
+        .sl-entry-inn-button p:last-child {
+          background: #f7f7f7;
+          color: #231815; }
+    .sl-entry-inn-form {
+      padding: 50px 60px 10px;
+      font-weight: 400; }
+      @media screen and (max-width: 768px) {
+        .sl-entry-inn-form {
+          padding: 35px 20px 10px; } }
+      .sl-entry-inn-form p {
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: nowrap; }
+        .sl-entry-inn-form p:nth-child(7) {
+          margin-bottom: 20px; }
+        .sl-entry-inn-form p:last-child {
+          margin-bottom: 30px; }
+      .sl-entry-inn-form label {
+        font-size: 12px;
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        line-height: 2.3;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #231815;
+        width: 140px; }
+      .sl-entry-inn-form input {
+        width: 70%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #777777;
+        font-size: 16px;
+        font-size: 1.6rem;
+        outline: none;
+        padding-left: 10px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-form input {
+            width: 68%; } }
+      .sl-entry-inn-form textarea {
+        width: 70%;
+        height: 124px;
+        background: #fff;
+        outline: none;
+        border: none;
+        resize: none;
+        padding: 10px 0 0 10px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0; }
+      .sl-entry-inn-form .agree-text {
+        font-family: "Noto Sans JP", sans-serif;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+        color: #231815; }
+        .sl-entry-inn-form .agree-text h3 {
+          font-size: 12px;
+          font-size: 1.2rem;
+          line-height: 2.3;
+          margin-bottom: 10px; }
+        .sl-entry-inn-form .agree-text p {
+          font-size: 10px;
+          font-size: 1.0rem;
+          line-height: 1.6;
+          display: block; }
+          .sl-entry-inn-form .agree-text p a {
+            color: #231815;
+            text-decoration: underline; }
+      .sl-entry-inn-form input[type="submit"] {
+        width: 150px;
+        padding: 6px 0;
+        margin: 0 auto;
+        font-size: 14px;
+        font-size: 1.4rem;
+        background: #231815;
+        line-height: 2;
+        text-align: center;
+        font-family: "Noto Sans JP", sans-serif;
+        letter-spacing: 0.2em;
+        color: #fff; }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sl-entry::-webkit-scrollbar {
+  display: none; }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sl-entry {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
 
 .l-ft {
   position: relative; }

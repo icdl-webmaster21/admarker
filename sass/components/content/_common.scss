@@ -25,7 +25,6 @@
         font-size: 1.1rem;
         margin-bottom: 40px;
     }
-    
     &:after {
         content: "";
         width: 10px;
@@ -41,23 +40,35 @@
 }
 
 .sl {
-    .site-main {
+    .sub-bg {
         position: relative;
         z-index: 1;
+        &.service-bg {
+            &::after {
+                top: 280px;
+                left: 14%;
+            }
+        }
+        &.recruit-bg {
+            &::after {
+                top: 200px;
+                left: 10%;
+            }
+        }
         &:after {
             content: "";
             height: 170px;
-            max-width: 816px;
             width: 80%;
+            max-width: 816px;
             background-image: url('../images/bg-logo.svg');
-            background-size: 100%;
+            background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: top right;
             position: absolute;
-            top: 335px;
-            left: 5.7%;
+            top: 350px;
+            left: 7%;
             z-index: -1;
-            @include mqSp {
+            @include mqSp() {
                 display: none;
             }
         }

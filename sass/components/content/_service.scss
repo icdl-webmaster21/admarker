@@ -1,13 +1,12 @@
 .sl {
     &-service {
-        
         &-inn {
             width: 80%;
             margin: 0 auto;
             padding-bottom: 15%;
             @include mqSp() {
-                width: 100%;
-                padding: 0 20px;
+                width: 90%;
+                padding-bottom: 0;
             }
             &-list {
                 @include mqSp() {
@@ -202,7 +201,7 @@
                             position: absolute;
                             font-size: 60px;
                             font-size: 6.0rem;
-                            top: 42%;
+                            top: 55%;
                         }
                     }
                 }
