@@ -1,0 +1,264 @@
+.sl {
+    &-contact {
+        width: 100%;
+        padding-left: 72px;
+        position: relative;
+        z-index: 1;
+        @include mqSp() {
+            padding: 0;
+        }
+        &-inn {
+            &-ttl {
+                @include mqSp() {
+                    width: 90%;
+                    margin: 0 auto 50px;
+                }
+            }
+            &-content {
+                font-size: 14px;
+                font-size: 1.4rem;
+                letter-spacing: 0.2em;
+                line-height: 2;
+                font-family: $jpfont;
+                color: #231815;
+                padding-left: 30px;
+                @include mqSp() {
+                    padding-left: 0;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            &-form {
+                padding: 50px 60px 10px;
+                font-weight: 400;
+                background: #fffdf3;
+                max-width: 600px;
+                width: 80%;
+                margin: 30px 0;
+                @include mqSp() {
+                    width: 100%;
+                    background: #fff;
+                    padding: 0;
+                }
+                .form-inner {
+                    @include mqSp() {
+                        width: 100%;
+                        background: #fffdf3;
+                        padding: 35px 20px 10px;
+                    }
+                }
+                p {
+                    margin-bottom: 40px;
+                    position: relative;
+                    @include mqSp () {
+                        border-bottom: 1px solid #777777;
+                        padding: 0 10px 10px;
+                        margin-bottom: 15px;
+                    }
+                    &.textarea {
+                        margin-bottom: 20px;
+                        @include mqSp() {
+                            border-bottom: none;
+                        }
+                        label {
+                            @include mqSp() {
+                                width: auto;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        @include mqSp() {
+                            border-bottom: none;
+                        }
+                    }
+                    &:first-child {
+                        @include mqSp() {
+                            display: none;
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            right: 10px;
+                            bottom: 15px;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 6px 5px 0 5px;
+                            border-color: #231815 transparent transparent transparent;
+                        }
+                    }
+                }
+                label {
+                    font-size: 12px;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.05em;
+                    line-height: 2.3;
+                    font-family: $jpfont;
+                    color: #231815;
+                    width: 140px;
+                    display: inline-block;
+                    vertical-align: top;
+                    @include mqSp() {
+                        width: 100px;
+                    }
+                }
+                input {
+                    width: 70%;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid #777777;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    font-family: $jpfont;
+                    outline: none;
+                    padding: 0 10px 5px 20px;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    @include mqSp() {
+                        width: 67.5%;
+                        border: none;
+                    }
+                }
+                textarea {
+                    width: 70%;
+                    height: 124px;
+                    background: #fff;
+                    outline: none;
+                    border: none;
+                    resize: none;
+                    font-family: $jpfont;
+                    padding: 20px 10px 5px 20px;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    @include mqSp() {
+                        display: block;
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                select {
+                    appearance: none;
+                    width: 70%;
+                    font-family: $jpfont;
+                    font-size: 12px;
+                    font-size: 1.2rem;
+                    background: none;
+                    color: #757575;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #777777;
+                    padding: 0 10px 5px 20px;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    @include mqSp() {
+                        border: none;
+                    }
+                }
+                .agree-text {
+                    margin-bottom: 40px;
+                    font-family: $jpfont;
+                    letter-spacing: 0.05em;
+                    font-weight: 400;
+                    color: #231815;
+                    @include mqSp() {
+                        padding-left: 10px;
+                    }
+                    input[type="checkbox"],
+                    input[type="checkbox"]:checked,
+                    input[type="checkbox"]:not(:checked) {
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        border: none;
+                        background: #fff;
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        appearance: none;
+                        padding: 0;
+                        @include mqSp() {
+                            border: 1px solid #b7b7b7;
+                            width: 17px;
+                            height: 17px;
+                            top: 3px;
+                        }
+                    }
+                    label {
+                        font-size: 12px;
+                        font-size: 1.2rem;
+                        line-height: 2.3;
+                        display: inline-block;
+                        width: auto;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 8px;
+                            top: 8px;
+                            left: 3px;
+                            border: solid #231815;
+                            border-width: 0 1px 1px 0;
+                            transform: scale(0) rotate( 45deg);
+                            @include mqSp() {
+                                top: 5px;
+                                left: 6px;
+                            }
+                        }
+                    }
+                    p {
+                        display: block;
+                        font-size: 10px;
+                        font-size: 1.0rem;
+                        line-height: 1.6;
+                        padding: 0 0 0 30px;
+                        margin-bottom: 10px;
+                        @include mqSp() {
+                            border-bottom: none;
+                        }
+                        &:after {
+                            display: none;
+                        }
+                        &:last-child {
+                            @include mqSp() {
+                                padding-left: 0;
+                            }
+                        }
+                        a {
+                            color: #231815;
+                            text-decoration: underline;
+                        }
+                    }
+                    input:checked+label:after {
+                        transform: scale(1) rotate( 45deg);
+                    }
+                }
+                input[type="submit"] {
+                    width: 150px;
+                    display: block;
+                    padding: 6px 0;
+                    margin: 0 auto;
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    background: #231815;
+                    line-height: 2;
+                    text-align: center;
+                    font-family: $jpfont;
+                    letter-spacing: 0.2em;
+                    color: #fff;
+                    @include mqSp() {
+                        margin: 50px auto 0;
+                    }
+                }
+            }
+        }
+    }
+}
