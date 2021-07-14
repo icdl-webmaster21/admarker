@@ -40,7 +40,7 @@
 }
 
 .sl {
-    .sub-bg {
+    .site-main {
         position: relative;
         z-index: 1;
         &.service-bg {
@@ -53,6 +53,11 @@
             &::after {
                 top: 200px;
                 left: 10%;
+            }
+        }
+        &.pp-bg {
+            &::after {
+                left: 16%;
             }
         }
         &:after {

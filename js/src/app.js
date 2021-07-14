@@ -26,4 +26,5 @@ $(document).ready(function() {
 
     }); // end click 
     $('.tabs li:first a').click();
+
 });

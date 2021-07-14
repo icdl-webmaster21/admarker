@@ -61,9 +61,15 @@
                                         vertical-align: middle;
                                         &:first-child {
                                             width: 267px;
+                                            @include mqSp() {
+                                                width: 50%;
+                                            }
                                         }
                                         &:last-child {
                                             width: 521px;
+                                            @include mqSp() {
+                                                width: 50%;
+                                            }
                                         }
                                     }
                                 }
@@ -72,9 +78,15 @@
                                         td {
                                             &:first-child {
                                                 width: 326px;
+                                                @include mqSp() {
+                                                    width: 50%;
+                                                }
                                             }
                                             &:last-child {
                                                 width: 462px;
+                                                @include mqSp() {
+                                                    width: 50%;
+                                                }
                                             }
                                         }
                                     }
