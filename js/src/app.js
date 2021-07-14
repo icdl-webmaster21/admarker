@@ -12,19 +12,19 @@ $('.sub-menu-02 li a').hover(
 );
 
 //servie details tab jquery
-$(document).ready(function() {
-    $('.tabs a').click(function() {
+// $(document).ready(function() {
+//     $('.tabs a').click(function() {
 
-        $('.service-tab').hide();
-        $('.tabs a.active').removeClass('active');
-        $(this).addClass('active');
+//         $('.service-tab').hide();
+//         $('.tabs a.active').removeClass('active');
+//         $(this).addClass('active');
 
-        var panel = $(this).attr('href');
-        $(panel).fadeIn(1000);
+//         var panel = $(this).attr('href');
+//         $(panel).fadeIn(1000);
 
-        return false; // prevents link action
+//         return false; // prevents link action
 
-    }); // end click 
-    $('.tabs li:first a').click();
+//     }); // end click 
+//     $('.tabs li:first a').click();
 
-});
+// });

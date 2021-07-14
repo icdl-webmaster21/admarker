@@ -33,3 +33,12 @@ $('.l-ft-top').click(function() {
     }, 300);
     return false;
 });
+
+//Entry Modal
+$('#entry-button').click(function(event) {
+    event.preventDefault();
+    $("#entry").fadeIn();
+});
+$('#about-recruit').click(function() {
+    $("#entry").fadeOut();
+});
