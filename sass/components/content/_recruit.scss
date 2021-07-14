@@ -1,16 +1,17 @@
 .sl {
     &-recruit {
         width: 100%;
-        padding-left: 72px;
         position: relative;
         z-index: 1;
-        @include mqSp() {
-            padding: 0;
-        }
         &-inn {
+            width: 86%;
+            margin: 0 auto;
+            @include mqSp() {
+                width: 100%;
+            }
             &-verbutton {
                 background: #ffd071;
-                position: absolute;
+                position: fixed;
                 right: 0;
                 top: 100px;
                 a {

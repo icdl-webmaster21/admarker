@@ -1,7 +1,7 @@
 .sl {
     &-service {
         &-inn {
-            width: 80%;
+            width: 86%;
             margin: 0 auto;
             padding-bottom: 15%;
             @include mqSp() {
@@ -132,7 +132,7 @@
                 }
             }
             &.details {
-                width: 90%;
+                width: 93%;
                 margin: 0 0 0 auto;
                 padding-bottom: 80px;
                 @include mqSp {
