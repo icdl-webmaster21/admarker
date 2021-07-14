@@ -1,6 +1,7 @@
             .l {
                 &-mv {
                     height: calc(100vh - 60px);
+                    mix-blend-mode: darken;
                     padding-bottom: 80px;
                     @include mqSp() {
                         height: 100vh;
@@ -86,8 +87,9 @@
                         &-ttl {
                             position: absolute;
                             width: 35%;
-                            left: -9px;
+                            left: -23px;
                             bottom: 61px;
+                            padding-left: 23px;
                             mix-blend-mode: luminosity;
                             z-index: 9;
                             //margin-bottom: 40px;

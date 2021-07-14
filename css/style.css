@@ -438,6 +438,7 @@ img {
 
 .l-mv {
   height: calc(100vh - 60px);
+  mix-blend-mode: darken;
   padding-bottom: 80px; }
   @media screen and (max-width: 768px) {
     .l-mv {
@@ -516,8 +517,9 @@ img {
     .l-mv-inn-ttl {
       position: absolute;
       width: 35%;
-      left: -9px;
+      left: -23px;
       bottom: 61px;
+      padding-left: 23px;
       mix-blend-mode: luminosity;
       z-index: 9; }
       @media screen and (max-width: 768px) {
