@@ -436,117 +436,120 @@ img {
       .sl .sub-bg:after {
         display: none; } }
 
-@media screen and (max-width: 768px) {
-  .l-mv {
-    height: 100vh; } }
-.l-mv-inn {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  padding-right: 50px; }
+.l-mv {
+  height: calc(100vh - 60px);
+  padding-bottom: 80px; }
   @media screen and (max-width: 768px) {
-    .l-mv-inn {
-      padding: 0 10px;
-      box-sizing: border-box; } }
-  .l-mv-inn-image {
+    .l-mv {
+      height: 100vh; } }
+  .l-mv-inn {
     position: relative;
-    width: 87.7%;
-    height: 100vh;
-    min-height: 463px;
-    margin-left: auto;
-    background-image: url("../images/mv-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-    transition: all 1000ms ease;
-    -webkit-transition: all 1000ms ease;
-    -moz-transition: all 1000ms ease;
-    -ms-transition: all 1000ms ease;
-    -o-transition: all 1000ms ease; }
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 50px;
+    height: 100%; }
     @media screen and (max-width: 768px) {
-      .l-mv-inn-image {
-        min-height: 330px; } }
-    .l-mv-inn-image.unset {
-      background-image: unset; }
-    @media screen and (max-width: 768px) {
-      .l-mv-inn-image {
-        width: 75%;
-        height: 55vh; } }
-    .l-mv-inn-image .slide-img img {
-      position: absolute;
-      width: 100%;
-      height: 100vh;
+      .l-mv-inn {
+        padding: 0 10px;
+        box-sizing: border-box; } }
+    .l-mv-inn-image {
+      position: relative;
+      width: 87.7%;
+      height: calc(100% - 61px);
       min-height: 463px;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      object-fit: cover;
-      object-position: center;
+      margin-left: auto;
+      background-image: url("../images/mv-img.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       overflow: hidden;
-      transform: scale(2) rotate(-35deg);
-      -webkit-transform: scale(2) rotate(-35deg);
-      -moz-transform: scale(2) rotate(-35deg);
-      -ms-transform: scale(2) rotate(-35deg);
-      -o-transform: scale(2) rotate(-35deg);
       transition: all 1000ms ease;
       -webkit-transition: all 1000ms ease;
       -moz-transition: all 1000ms ease;
       -ms-transition: all 1000ms ease;
       -o-transition: all 1000ms ease; }
       @media screen and (max-width: 768px) {
-        .l-mv-inn-image .slide-img img {
+        .l-mv-inn-image {
           min-height: 330px; } }
-      .l-mv-inn-image .slide-img img.hovered {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-        -webkit-transform: scale(1) rotate(0deg);
-        -moz-transform: scale(1) rotate(0deg);
-        -ms-transform: scale(1) rotate(0deg);
-        -o-transform: scale(1) rotate(0deg);
+      .l-mv-inn-image.unset {
+        background-image: unset; }
+      @media screen and (max-width: 768px) {
+        .l-mv-inn-image {
+          width: 75%;
+          height: 55vh; } }
+      .l-mv-inn-image .slide-img img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-height: 463px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        transform: scale(2) rotate(-35deg);
+        -webkit-transform: scale(2) rotate(-35deg);
+        -moz-transform: scale(2) rotate(-35deg);
+        -ms-transform: scale(2) rotate(-35deg);
+        -o-transform: scale(2) rotate(-35deg);
         transition: all 1000ms ease;
         -webkit-transition: all 1000ms ease;
         -moz-transition: all 1000ms ease;
         -ms-transition: all 1000ms ease;
         -o-transition: all 1000ms ease; }
-  .l-mv-inn-ttl {
-    position: absolute;
-    width: 35%;
-    left: -9px;
-    bottom: 15%;
-    mix-blend-mode: luminosity;
-    z-index: 9; }
-    @media screen and (max-width: 768px) {
-      .l-mv-inn-ttl {
-        width: 85%;
-        left: 8%;
-        bottom: 26%;
-        mix-blend-mode: multiply; } }
-  .l-mv-inn-infotxt {
-    padding-top: 40px; }
-    @media screen and (max-width: 768px) {
-      .l-mv-inn-infotxt {
-        padding-top: 25%;
-        margin-left: 6%; } }
-    .l-mv-inn-infotxt span {
-      display: inline-block;
-      padding: 0 3px;
-      font-size: 14px;
-      font-size: 1.4rem;
-      line-height: 1.5;
-      color: #fff;
-      background-color: #000;
-      letter-spacing: 0.05em; }
+        @media screen and (max-width: 768px) {
+          .l-mv-inn-image .slide-img img {
+            min-height: 330px; } }
+        .l-mv-inn-image .slide-img img.hovered {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+          -webkit-transform: scale(1) rotate(0deg);
+          -moz-transform: scale(1) rotate(0deg);
+          -ms-transform: scale(1) rotate(0deg);
+          -o-transform: scale(1) rotate(0deg);
+          transition: all 1000ms ease;
+          -webkit-transition: all 1000ms ease;
+          -moz-transition: all 1000ms ease;
+          -ms-transition: all 1000ms ease;
+          -o-transition: all 1000ms ease; }
+    .l-mv-inn-ttl {
+      position: absolute;
+      width: 35%;
+      left: -9px;
+      bottom: 61px;
+      mix-blend-mode: luminosity;
+      z-index: 9; }
       @media screen and (max-width: 768px) {
-        .l-mv-inn-infotxt span {
-          margin-bottom: 4px;
-          padding: 1px 3px;
-          background-color: #231815;
-          font-size: 15px;
-          font-size: 1.5rem;
-          box-sizing: border-box;
-          letter-spacing: 3px; } }
+        .l-mv-inn-ttl {
+          width: 85%;
+          left: 8%;
+          bottom: 26%;
+          mix-blend-mode: multiply; } }
+    .l-mv-inn-infotxt {
+      padding-top: 40px; }
+      @media screen and (max-width: 768px) {
+        .l-mv-inn-infotxt {
+          padding-top: 25%;
+          margin-left: 6%; } }
+      .l-mv-inn-infotxt span {
+        display: inline-block;
+        padding: 0 3px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #000;
+        letter-spacing: 0.05em; }
+        @media screen and (max-width: 768px) {
+          .l-mv-inn-infotxt span {
+            margin-bottom: 4px;
+            padding: 1px 3px;
+            background-color: #231815;
+            font-size: 15px;
+            font-size: 1.5rem;
+            box-sizing: border-box;
+            letter-spacing: 3px; } }
 
 .sl-about {
   width: 100%;
