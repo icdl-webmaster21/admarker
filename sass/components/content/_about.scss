@@ -1,15 +1,11 @@
 .sl {
     &-about {
         width: 100%;
-        padding-left: 72px;
         position: relative;
         z-index: 1;
-        @include mqSp() {
-            padding: 0;
-        }
         &-inn {
-            max-width: 782px;
-            width: 95%;
+            width: 80%;
+            margin: 0 auto;
             @include mqSp() {
                 width: 90%;
                 margin: 0 auto;

@@ -1,13 +1,11 @@
 .sl {
     &-contact {
         width: 100%;
-        padding-left: 72px;
         position: relative;
         z-index: 1;
-        @include mqSp() {
-            padding: 0;
-        }
         &-inn {
+            width: 80%;
+            margin: 0 auto;
             &-ttl {
                 @include mqSp() {
                     width: 90%;

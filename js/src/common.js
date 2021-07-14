@@ -18,14 +18,6 @@ $('.more-service .plus').click(function(e) {
     }
 });
 
-$(function() {
-    $('#mv-img').css({ 'height': (($(window).height()) - 150) + 'px' });
-
-    $(window).bind('resize', function() {
-        $('#mv-img').css({ 'height': (($(window).height()) - 150) + 'px' });
-    });
-});
-
 // menu trigger js
 $('.menu-bar').on('click', function() {
     $('.menu-bar').toggleClass('active');
