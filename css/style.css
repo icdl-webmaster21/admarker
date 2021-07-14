@@ -443,7 +443,6 @@ img {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 50px;
   padding-right: 50px; }
   @media screen and (max-width: 768px) {
     .l-mv-inn {
@@ -452,8 +451,6 @@ img {
   .l-mv-inn-image {
     position: relative;
     width: 87.7%;
-    height: 100vh;
-    min-height: 463px;
     margin-left: auto;
     background-image: url("../images/mv-img.png");
     background-repeat: no-repeat;
@@ -514,7 +511,7 @@ img {
     position: absolute;
     width: 35%;
     left: -9px;
-    bottom: 15%;
+    bottom: 10%;
     mix-blend-mode: luminosity;
     z-index: 9; }
     @media screen and (max-width: 768px) {

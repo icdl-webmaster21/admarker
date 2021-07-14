@@ -1,5 +1,6 @@
 .l {
     &-mv {
+        // height: 100vh;
         @include mqSp() {
             height: 100vh;
         }
@@ -7,7 +8,6 @@
             position: relative;
             width: 100%;
             margin: 0 auto;
-            padding-bottom: 50px;
             padding-right: 50px;
             @include mqSp() {
                 padding: 0 10px;
@@ -16,8 +16,8 @@
             &-image {
                 position: relative;
                 width: 87.7%;
-                height: 100vh;
-                min-height: 463px;
+                // padding: 23% 0;
+                // height: 77vh;
                 margin-left: auto;
                 background-image: url('../images/mv-img.png');
                 background-repeat: no-repeat;
@@ -84,7 +84,7 @@
                 position: absolute;
                 width: 35%;
                 left: -9px;
-                bottom: 15%;
+                bottom: 10%;
                 mix-blend-mode: luminosity;
                 z-index: 9;
                 // h2 {

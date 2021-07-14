@@ -17,6 +17,13 @@ $('.more-service .plus').click(function(e) {
         $('.hd-copy').css('position','absolute');
     }
 });
+setWindowHeight();
+function setWindowHeight(){
+    var windowHeight = window.innerHeight;
+    document.getElementById("mv-img").style.height = windowHeight + "px";
+    // console.log(document.body.style.height);
+}
+window.addEventListener("resize",setWindowHeight,false);
 
 // menu trigger js
 $('.menu-bar').on('click', function() {
