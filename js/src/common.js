@@ -4,26 +4,27 @@ $('.more-service .plus').click(function(e) {
     var $this = $(this);
     if ($this.parent().next().hasClass('show')) {
         $this.parent().next().removeClass('show');
-        $('.hd-copy').css('position','absolute');
+        $('.hd-copy').css('position', 'absolute');
     } else {
         $this.parent().next().addClass('show');
-        $('.hd-copy').css('position','relative');
+        $('.hd-copy').css('position', 'relative');
     }
     if ($this.parent().find(".convert").hasClass("plus")) {
         $this.parent().find(".convert").removeClass('plus').addClass('minus');
-        $('.hd-copy').css('position','relative');
+        $('.hd-copy').css('position', 'relative');
     } else {
         $this.parent().find(".convert").removeClass('minus').addClass('plus');
-        $('.hd-copy').css('position','absolute');
+        $('.hd-copy').css('position', 'absolute');
     }
 });
-setWindowHeight();
-function setWindowHeight(){
-    var windowHeight = window.innerHeight;
-    document.getElementById("mv-img").style.height = windowHeight + "px";
-    // console.log(document.body.style.height);
-}
-window.addEventListener("resize",setWindowHeight,false);
+
+$(function() {
+    $('#mv-img').css({ 'height': (($(window).height()) - 150) + 'px' });
+
+    $(window).bind('resize', function() {
+        $('#mv-img').css({ 'height': (($(window).height()) - 150) + 'px' });
+    });
+});
 
 // menu trigger js
 $('.menu-bar').on('click', function() {
