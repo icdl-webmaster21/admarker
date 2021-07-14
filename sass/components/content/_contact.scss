@@ -49,8 +49,6 @@
                 }
                 p {
                     margin-bottom: 40px;
-                    // display: flex;
-                    // flex-wrap: nowrap;
                     position: relative;
                     @include mqSp () {
                         border-bottom: 1px solid #777777;
@@ -61,6 +59,11 @@
                         margin-bottom: 20px;
                         @include mqSp() {
                             border-bottom: none;
+                        }
+                        label {
+                            @include mqSp() {
+                                width: auto;
+                            }
                         }
                     }
                     &:last-child {
@@ -96,7 +99,7 @@
                     display: inline-block;
                     vertical-align: top;
                     @include mqSp() {
-                        width: 120px;
+                        width: 100px;
                     }
                 }
                 input {
@@ -115,7 +118,7 @@
                     -ms-border-radius: 0;
                     -o-border-radius: 0;
                     @include mqSp() {
-                        width: 61%;
+                        width: 67.5%;
                         border: none;
                     }
                 }

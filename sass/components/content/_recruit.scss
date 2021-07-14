@@ -268,13 +268,27 @@
                 }
                 p {
                     margin-bottom: 40px;
-                    display: flex;
-                    flex-wrap: nowrap;
-                    &:nth-child(7) {
+                    @include mqSp () {
+                        border-bottom: 1px solid #777777;
+                        padding: 0 10px 10px;
+                        margin-bottom: 15px;
+                    }
+                    &.textarea {
                         margin-bottom: 20px;
+                        @include mqSp() {
+                            border-bottom: none;
+                        }
+                        label {
+                            @include mqSp() {
+                                width: auto;
+                            }
+                        }
                     }
                     &:last-child {
                         margin-bottom: 30px;
+                        @include mqSp() {
+                            border-bottom: none;
+                        }
                     }
                 }
                 label {
@@ -285,6 +299,11 @@
                     font-family: $jpfont;
                     color: #231815;
                     width: 140px;
+                    display: inline-block;
+                    vertical-align: top;
+                    @include mqSp() {
+                        width: 100px;
+                    }
                 }
                 input {
                     width: 70%;
@@ -301,7 +320,8 @@
                     -ms-border-radius: 0;
                     -o-border-radius: 0;
                     @include mqSp() {
-                        width: 68%;
+                        width: 59.8%;
+                        border: none;
                     }
                 }
                 textarea {
@@ -317,31 +337,94 @@
                     -moz-border-radius: 0;
                     -ms-border-radius: 0;
                     -o-border-radius: 0;
+                    @include mqSp() {
+                        display: block;
+                        width: 100%;
+                        margin-top: 10px;
+                    }
                 }
                 .agree-text {
+                    margin-bottom: 40px;
                     font-family: $jpfont;
                     letter-spacing: 0.05em;
                     font-weight: 400;
                     color: #231815;
-                    h3 {
+                    @include mqSp() {
+                        padding-left: 10px;
+                    }
+                    input[type="checkbox"],
+                    input[type="checkbox"]:checked,
+                    input[type="checkbox"]:not(:checked) {
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        border: none;
+                        background: #fff;
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        appearance: none;
+                        padding: 0;
+                        @include mqSp() {
+                            border: 1px solid #b7b7b7;
+                            width: 17px;
+                            height: 17px;
+                            top: 3px;
+                        }
+                    }
+                    label {
                         font-size: 12px;
                         font-size: 1.2rem;
                         line-height: 2.3;
-                        margin-bottom: 10px;
+                        display: inline-block;
+                        width: auto;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 8px;
+                            top: 8px;
+                            left: 3px;
+                            border: solid #231815;
+                            border-width: 0 1px 1px 0;
+                            transform: scale(0) rotate( 45deg);
+                            @include mqSp() {
+                                top: 5px;
+                                left: 6px;
+                            }
+                        }
                     }
                     p {
+                        position: relative;
+                        display: block;
                         font-size: 10px;
                         font-size: 1.0rem;
                         line-height: 1.6;
-                        display: block;
+                        padding: 0 0 0 30px;
+                        margin-bottom: 10px;
+                        @include mqSp() {
+                            border-bottom: none;
+                        }
+                        &:after {
+                            display: none;
+                        }
+                        &:last-child {
+                            @include mqSp() {
+                                padding-left: 0;
+                            }
+                        }
                         a {
                             color: #231815;
                             text-decoration: underline;
                         }
                     }
+                    input:checked+label:after {
+                        transform: scale(1) rotate( 45deg);
+                    }
                 }
                 input[type="submit"] {
                     width: 150px;
+                    display: block;
                     padding: 6px 0;
                     margin: 0 auto;
                     font-size: 14px;

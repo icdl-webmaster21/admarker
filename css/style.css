@@ -902,13 +902,25 @@ img {
         .sl-entry-inn-form {
           padding: 35px 20px 10px; } }
       .sl-entry-inn-form p {
-        margin-bottom: 40px;
-        display: flex;
-        flex-wrap: nowrap; }
-        .sl-entry-inn-form p:nth-child(7) {
+        margin-bottom: 40px; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-form p {
+            border-bottom: 1px solid #777777;
+            padding: 0 10px 10px;
+            margin-bottom: 15px; } }
+        .sl-entry-inn-form p.textarea {
           margin-bottom: 20px; }
+          @media screen and (max-width: 768px) {
+            .sl-entry-inn-form p.textarea {
+              border-bottom: none; } }
+          @media screen and (max-width: 768px) {
+            .sl-entry-inn-form p.textarea label {
+              width: auto; } }
         .sl-entry-inn-form p:last-child {
           margin-bottom: 30px; }
+          @media screen and (max-width: 768px) {
+            .sl-entry-inn-form p:last-child {
+              border-bottom: none; } }
       .sl-entry-inn-form label {
         font-size: 12px;
         font-size: 1.2rem;
@@ -916,7 +928,12 @@ img {
         line-height: 2.3;
         font-family: "Noto Sans JP", sans-serif;
         color: #231815;
-        width: 140px; }
+        width: 140px;
+        display: inline-block;
+        vertical-align: top; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-form label {
+            width: 100px; } }
       .sl-entry-inn-form input {
         width: 70%;
         background: none;
@@ -933,7 +950,8 @@ img {
         -o-border-radius: 0; }
         @media screen and (max-width: 768px) {
           .sl-entry-inn-form input {
-            width: 68%; } }
+            width: 59.8%;
+            border: none; } }
       .sl-entry-inn-form textarea {
         width: 70%;
         height: 124px;
@@ -947,26 +965,85 @@ img {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0; }
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-form textarea {
+            display: block;
+            width: 100%;
+            margin-top: 10px; } }
       .sl-entry-inn-form .agree-text {
+        margin-bottom: 40px;
         font-family: "Noto Sans JP", sans-serif;
         letter-spacing: 0.05em;
         font-weight: 400;
         color: #231815; }
-        .sl-entry-inn-form .agree-text h3 {
+        @media screen and (max-width: 768px) {
+          .sl-entry-inn-form .agree-text {
+            padding-left: 10px; } }
+        .sl-entry-inn-form .agree-text input[type="checkbox"],
+        .sl-entry-inn-form .agree-text input[type="checkbox"]:checked,
+        .sl-entry-inn-form .agree-text input[type="checkbox"]:not(:checked) {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border: none;
+          background: #fff;
+          position: absolute;
+          top: 8px;
+          left: 0;
+          appearance: none;
+          padding: 0; }
+          @media screen and (max-width: 768px) {
+            .sl-entry-inn-form .agree-text input[type="checkbox"],
+            .sl-entry-inn-form .agree-text input[type="checkbox"]:checked,
+            .sl-entry-inn-form .agree-text input[type="checkbox"]:not(:checked) {
+              border: 1px solid #b7b7b7;
+              width: 17px;
+              height: 17px;
+              top: 3px; } }
+        .sl-entry-inn-form .agree-text label {
           font-size: 12px;
           font-size: 1.2rem;
           line-height: 2.3;
-          margin-bottom: 10px; }
+          display: inline-block;
+          width: auto; }
+          .sl-entry-inn-form .agree-text label:after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 8px;
+            top: 8px;
+            left: 3px;
+            border: solid #231815;
+            border-width: 0 1px 1px 0;
+            transform: scale(0) rotate(45deg); }
+            @media screen and (max-width: 768px) {
+              .sl-entry-inn-form .agree-text label:after {
+                top: 5px;
+                left: 6px; } }
         .sl-entry-inn-form .agree-text p {
+          position: relative;
+          display: block;
           font-size: 10px;
           font-size: 1.0rem;
           line-height: 1.6;
-          display: block; }
+          padding: 0 0 0 30px;
+          margin-bottom: 10px; }
+          @media screen and (max-width: 768px) {
+            .sl-entry-inn-form .agree-text p {
+              border-bottom: none; } }
+          .sl-entry-inn-form .agree-text p:after {
+            display: none; }
+          @media screen and (max-width: 768px) {
+            .sl-entry-inn-form .agree-text p:last-child {
+              padding-left: 0; } }
           .sl-entry-inn-form .agree-text p a {
             color: #231815;
             text-decoration: underline; }
+        .sl-entry-inn-form .agree-text input:checked + label:after {
+          transform: scale(1) rotate(45deg); }
       .sl-entry-inn-form input[type="submit"] {
         width: 150px;
+        display: block;
         padding: 6px 0;
         margin: 0 auto;
         font-size: 14px;
@@ -1044,6 +1121,9 @@ img {
         @media screen and (max-width: 768px) {
           .sl-contact-inn-form p.textarea {
             border-bottom: none; } }
+        @media screen and (max-width: 768px) {
+          .sl-contact-inn-form p.textarea label {
+            width: auto; } }
       @media screen and (max-width: 768px) {
         .sl-contact-inn-form p:last-child {
           border-bottom: none; } }
@@ -1072,7 +1152,7 @@ img {
       vertical-align: top; }
       @media screen and (max-width: 768px) {
         .sl-contact-inn-form label {
-          width: 120px; } }
+          width: 100px; } }
     .sl-contact-inn-form input {
       width: 70%;
       background: none;
@@ -1090,7 +1170,7 @@ img {
       -o-border-radius: 0; }
       @media screen and (max-width: 768px) {
         .sl-contact-inn-form input {
-          width: 61%;
+          width: 67.5%;
           border: none; } }
     .sl-contact-inn-form textarea {
       width: 70%;
