@@ -2,7 +2,7 @@
                 &-mv {
                     height: calc(100vh - 60px);
                     mix-blend-mode: darken;
-                    padding-bottom: 40px;
+                    padding-bottom: 110px;
                     @include mqSp() {
                         height: 100%;
                     }
@@ -18,7 +18,7 @@
                         }
                         &-image {
                             position: relative;
-                            width: 87.7%;
+                            width: 85.7%;
                             height: calc(100% - 61px);
                             min-height: 463px;
                             margin-left: auto;
@@ -85,7 +85,7 @@
                         }
                         &-ttl {
                             position: absolute;
-                            width: 35%;
+                            width: 40%;
                             left: -23px;
                             bottom: 55px;
                             padding-left: 23px;
@@ -99,7 +99,7 @@
                             }
                         }
                         &-infotxt {
-                            padding-top: 40px;
+                            padding-top: 80px;
                             @include mqSp() {
                                 padding-top: 19%;
                                 margin-left: 6%;

@@ -9,6 +9,7 @@
                 padding-bottom: 0;
             }
             &-list {
+                padding-top: 20px;
                 @include mqSp() {
                     margin-bottom: 20px;
                 }
@@ -67,7 +68,6 @@
                         }
                         span {
                             display: block;
-                            color: #f8bb2c;
                         }
                         .step-num {
                             padding-bottom: 20px;
@@ -75,6 +75,7 @@
                             font-size: 2.0rem;
                             font-family: $bodonifont;
                             font-weight: bold;
+                            color: #F7DDA9;
                             @include mqSp() {
                                 font-size: 18px;
                             }
@@ -85,6 +86,7 @@
                             font-size: 3.3rem;
                             font-family: $bodonifont;
                             font-weight: bold;
+                            color: #f8bb2c;
                             @include mqSp() {
                                 font-size: 28px;
                             }
@@ -95,6 +97,7 @@
                             font-size: 1.1rem;
                             font-family: $jpfont;
                             letter-spacing: 0.05em;
+                            color: #F7DDA9;
                             @include mqSp() {
                                 font-size: 10px;
                             }

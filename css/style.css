@@ -136,7 +136,7 @@ img {
       z-index: 99; } }
   .l-hd-inn {
     margin-top: 60px;
-    padding-left: 40px; }
+    padding-left: 30px; }
     @media screen and (max-width: 768px) {
       .l-hd-inn {
         height: auto;
@@ -242,7 +242,7 @@ img {
         height: 0; } }
     .l-hd-inn-menu-inner {
       max-width: 180px;
-      padding-top: 50px; }
+      padding: 50px 0; }
       @media screen and (max-width: 768px) {
         .l-hd-inn-menu-inner {
           width: 80%;
@@ -367,11 +367,9 @@ img {
     text-align: center;
     font-size: 10px;
     font-size: 1.0rem;
-    letter-spacing: 0.05em;
-    margin-left: -15px; }
+    letter-spacing: 0.05em; }
     @media screen and (max-width: 768px) {
       .l-hd .hd-copy {
-        margin-left: 0;
         bottom: 0; } }
 
 .site-main {
@@ -442,7 +440,7 @@ img {
 .l-mv {
   height: calc(100vh - 60px);
   mix-blend-mode: darken;
-  padding-bottom: 40px; }
+  padding-bottom: 110px; }
   @media screen and (max-width: 768px) {
     .l-mv {
       height: 100%; } }
@@ -458,7 +456,7 @@ img {
         box-sizing: border-box; } }
     .l-mv-inn-image {
       position: relative;
-      width: 87.7%;
+      width: 85.7%;
       height: calc(100% - 61px);
       min-height: 463px;
       margin-left: auto;
@@ -519,7 +517,7 @@ img {
           -o-transition: all 1000ms ease; }
     .l-mv-inn-ttl {
       position: absolute;
-      width: 35%;
+      width: 40%;
       left: -23px;
       bottom: 55px;
       padding-left: 23px;
@@ -532,7 +530,7 @@ img {
           bottom: 20%;
           padding-left: 0; } }
     .l-mv-inn-infotxt {
-      padding-top: 40px; }
+      padding-top: 80px; }
       @media screen and (max-width: 768px) {
         .l-mv-inn-infotxt {
           padding-top: 19%;
@@ -688,106 +686,110 @@ img {
     .sl-service-inn {
       width: 90%;
       padding-bottom: 0; } }
-  @media screen and (max-width: 768px) {
-    .sl-service-inn-list {
-      margin-bottom: 20px; } }
-  .sl-service-inn-list-step {
-    flex-flow: nowrap; }
+  .sl-service-inn-list {
+    padding-top: 20px; }
     @media screen and (max-width: 768px) {
-      .sl-service-inn-list-step {
-        flex-flow: wrap; } }
-    .sl-service-inn-list-step .step-box {
-      position: relative;
-      padding: 0 40px;
-      box-sizing: border-box; }
+      .sl-service-inn-list {
+        margin-bottom: 20px; } }
+    .sl-service-inn-list-step {
+      flex-flow: nowrap; }
       @media screen and (max-width: 768px) {
-        .sl-service-inn-list-step .step-box {
-          width: 50%;
-          margin-bottom: 25%; } }
-      @media screen and (max-width: 768px) {
-        .sl-service-inn-list-step .step-box:nth-child(2n)::after {
-          background-color: transparent; } }
-      .sl-service-inn-list-step .step-box::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 1px;
-        height: 116%;
-        background-color: #777777; }
-      .sl-service-inn-list-step .step-box:nth-child(1) {
-        padding: 0 40px 0 20px; }
+        .sl-service-inn-list-step {
+          flex-flow: wrap; } }
+      .sl-service-inn-list-step .step-box {
+        position: relative;
+        padding: 0 40px;
+        box-sizing: border-box; }
         @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box:nth-child(1) {
-            padding: 0; } }
-      .sl-service-inn-list-step .step-box:nth-child(2) {
-        padding: 20px 40px 0; }
+          .sl-service-inn-list-step .step-box {
+            width: 50%;
+            margin-bottom: 25%; } }
         @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box:nth-child(2) {
-            padding: 0 10px; } }
-      .sl-service-inn-list-step .step-box:nth-child(3) {
-        padding: 40px 40px 0; }
-        @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box:nth-child(3) {
-            padding: 0; } }
-      .sl-service-inn-list-step .step-box:nth-child(4) {
-        padding: 60px 40px 0; }
-        @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box:nth-child(4) {
-            padding: 0 10px; } }
-      .sl-service-inn-list-step .step-box span {
-        display: block;
-        color: #f8bb2c; }
-      .sl-service-inn-list-step .step-box .step-num {
-        padding-bottom: 20px;
-        font-size: 20px;
-        font-size: 2.0rem;
-        font-family: "BodoniSvtyTwoITCTT", sans-serif;
-        font-weight: bold; }
-        @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box .step-num {
-            font-size: 18px; } }
-      .sl-service-inn-list-step .step-box .step-ttl01 {
-        padding-bottom: 20px;
-        font-size: 33px;
-        font-size: 3.3rem;
-        font-family: "BodoniSvtyTwoITCTT", sans-serif;
-        font-weight: bold; }
-        @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box .step-ttl01 {
-            font-size: 28px; } }
-      .sl-service-inn-list-step .step-box .step-ttl02 {
-        padding-bottom: 30px;
-        font-size: 11px;
-        font-size: 1.1rem;
-        font-family: "Noto Sans JP", sans-serif;
-        letter-spacing: 0.05em; }
-        @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box .step-ttl02 {
-            font-size: 10px; } }
-      .sl-service-inn-list-step .step-box ul li {
-        margin-bottom: 20px; }
-        @media screen and (max-width: 768px) {
-          .sl-service-inn-list-step .step-box ul li {
-            margin-bottom: 10px; } }
-        .sl-service-inn-list-step .step-box ul li a {
-          color: #231815;
-          font-size: 12px;
-          font-size: 1.2rem;
-          letter-spacing: 0.05em; }
-          .sl-service-inn-list-step .step-box ul li a:hover {
-            color: #f8bb2c; }
-            @media screen and (max-width: 768px) {
-              .sl-service-inn-list-step .step-box ul li a:hover {
-                color: #231815; } }
-      .sl-service-inn-list-step .step-box .step-link {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -50px;
-        display: block;
-        width: 28px;
-        margin: 0 auto; }
+          .sl-service-inn-list-step .step-box:nth-child(2n)::after {
+            background-color: transparent; } }
+        .sl-service-inn-list-step .step-box::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 116%;
+          background-color: #777777; }
+        .sl-service-inn-list-step .step-box:nth-child(1) {
+          padding: 0 40px 0 20px; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box:nth-child(1) {
+              padding: 0; } }
+        .sl-service-inn-list-step .step-box:nth-child(2) {
+          padding: 20px 40px 0; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box:nth-child(2) {
+              padding: 0 10px; } }
+        .sl-service-inn-list-step .step-box:nth-child(3) {
+          padding: 40px 40px 0; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box:nth-child(3) {
+              padding: 0; } }
+        .sl-service-inn-list-step .step-box:nth-child(4) {
+          padding: 60px 40px 0; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box:nth-child(4) {
+              padding: 0 10px; } }
+        .sl-service-inn-list-step .step-box span {
+          display: block; }
+        .sl-service-inn-list-step .step-box .step-num {
+          padding-bottom: 20px;
+          font-size: 20px;
+          font-size: 2.0rem;
+          font-family: "BodoniSvtyTwoITCTT", sans-serif;
+          font-weight: bold;
+          color: #F7DDA9; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box .step-num {
+              font-size: 18px; } }
+        .sl-service-inn-list-step .step-box .step-ttl01 {
+          padding-bottom: 20px;
+          font-size: 33px;
+          font-size: 3.3rem;
+          font-family: "BodoniSvtyTwoITCTT", sans-serif;
+          font-weight: bold;
+          color: #f8bb2c; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box .step-ttl01 {
+              font-size: 28px; } }
+        .sl-service-inn-list-step .step-box .step-ttl02 {
+          padding-bottom: 30px;
+          font-size: 11px;
+          font-size: 1.1rem;
+          font-family: "Noto Sans JP", sans-serif;
+          letter-spacing: 0.05em;
+          color: #F7DDA9; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box .step-ttl02 {
+              font-size: 10px; } }
+        .sl-service-inn-list-step .step-box ul li {
+          margin-bottom: 20px; }
+          @media screen and (max-width: 768px) {
+            .sl-service-inn-list-step .step-box ul li {
+              margin-bottom: 10px; } }
+          .sl-service-inn-list-step .step-box ul li a {
+            color: #231815;
+            font-size: 12px;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em; }
+            .sl-service-inn-list-step .step-box ul li a:hover {
+              color: #f8bb2c; }
+              @media screen and (max-width: 768px) {
+                .sl-service-inn-list-step .step-box ul li a:hover {
+                  color: #231815; } }
+        .sl-service-inn-list-step .step-box .step-link {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -50px;
+          display: block;
+          width: 28px;
+          margin: 0 auto; }
   .sl-service-inn.details {
     width: 93%;
     margin: 0 0 0 auto;
