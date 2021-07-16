@@ -4,18 +4,23 @@ $('.more-service .plus').click(function(e) {
     var $this = $(this);
     if ($this.parent().next().hasClass('show')) {
         $this.parent().next().removeClass('show');
-        $('.hd-copy').css('position', 'absolute');
     } else {
         $this.parent().next().addClass('show');
-        $('.hd-copy').css('position', 'relative');
     }
     if ($this.parent().find(".convert").hasClass("plus")) {
         $this.parent().find(".convert").removeClass('plus').addClass('minus');
-        $('.hd-copy').css('position', 'relative');
     } else {
         $this.parent().find(".convert").removeClass('minus').addClass('plus');
-        $('.hd-copy').css('position', 'absolute');
     }
+});
+
+$(function() {
+    $('.l-hd-inn-menu-inner').css({ 'min-height': (($(window).height()) - 110) + 'px' });
+
+    $(window).bind('resize', function() {
+        $('.l-hd-inn-menu-inner').css({ 'min-height': (($(window).height()) - 110) + 'px' });
+
+    });
 });
 
 // menu trigger js
