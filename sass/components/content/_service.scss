@@ -237,9 +237,9 @@
                     }
                     .details-txt {
                         position: absolute;
-                        left: 20%;
-                        bottom: 20px;
                         max-width: 365px;
+                        left: 50px;
+                        bottom: 20px;
                         padding: 15px 10px;
                         background-color: rgba($color: #ffffff, $alpha: 0.7);
                         font-size: 12px;
@@ -258,8 +258,9 @@
                         }
                     }
                     .details-img {
-                        width: 55%;
+                        width: 70%;
                         max-width: 532px;
+                        margin-left: auto;
                         @include mqSp() {
                             width: 90%;
                             max-width: 100%;
@@ -277,6 +278,32 @@
                     }
                 }
             }
+        }
+        .tabs {
+            a{
+                &.active {
+                    color: red;
+                }
+            }
+        }
+        .nav-tabs {
+            a{
+                &.active {
+                    color: red;
+                }
+            }
+        }
+        
+        .tabs-content {
+            width: 100%;
+        }
+        .tabs-inn {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            // &.active {
+            //     display: flex;
+            // }
         }
     }
 }
