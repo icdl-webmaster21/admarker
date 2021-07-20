@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 });
 
-
+//servie with related tab jquery
 var showTab = function(selector) {
     $('.tabs-inn').hide();
     $(selector).show();
