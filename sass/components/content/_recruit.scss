@@ -78,7 +78,6 @@
                 .list {
                     margin-bottom: 20px;
                     border-bottom: 1px solid #999999;
-                    padding: 0 20px;
                     flex-wrap: nowrap;
                     color: #231815;
                     font-family: $jpfont;
@@ -171,6 +170,21 @@
                                 &:before {
                                     display: none;
                                 }
+                                &:first-child {
+                                    span {
+                                       background-color: #EDC92F; 
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    span {
+                                        background-color: #DDBA2A; 
+                                     } 
+                                }
+                                &:nth-child(3) {
+                                    span {
+                                        background-color: #DBB30E 
+                                     } 
+                                }
                                 span {
                                     width: 70px;
                                     display: inline-block;
@@ -180,8 +194,7 @@
                                     font-size: 1.2rem;
                                     letter-spacing: 0.1em;
                                     line-height: 1.7;
-                                    background: #edc92f;
-                                    padding: 0 0 5px;
+                                    padding: 0 0 1px;
                                     text-align: center;
                                     margin-right: 15px;
                                 }

@@ -40,10 +40,10 @@ $('.l-ft-top').click(function() {
 });
 
 //Entry Modal
-$('#entry-button').click(function(event) {
-    event.preventDefault();
-    $("#entry").fadeIn();
-});
-$('#about-recruit').click(function() {
-    $("#entry").fadeOut();
-});
+// $('#entry-button').click(function(event) {
+//     event.preventDefault();
+//     $("#entry").fadeIn();
+// });
+// $('#about-recruit').click(function() {
+//     $("#entry").fadeOut();
+// });

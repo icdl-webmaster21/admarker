@@ -996,7 +996,6 @@ img {
       .sl-recruit-inn-fl .list {
         margin-bottom: 20px;
         border-bottom: 1px solid #999999;
-        padding: 0 20px;
         flex-wrap: nowrap;
         color: #231815;
         font-family: "Noto Sans JP", sans-serif; }
@@ -1072,6 +1071,12 @@ img {
             padding: 0 0 15px; }
             .sl-recruit-inn-fl .list .r-side .step-list li:before {
               display: none; }
+            .sl-recruit-inn-fl .list .r-side .step-list li:first-child span {
+              background-color: #EDC92F; }
+            .sl-recruit-inn-fl .list .r-side .step-list li:nth-child(2) span {
+              background-color: #DDBA2A; }
+            .sl-recruit-inn-fl .list .r-side .step-list li:nth-child(3) span {
+              background-color: #DBB30E; }
             .sl-recruit-inn-fl .list .r-side .step-list li span {
               width: 70px;
               display: inline-block;
@@ -1081,8 +1086,7 @@ img {
               font-size: 1.2rem;
               letter-spacing: 0.1em;
               line-height: 1.7;
-              background: #edc92f;
-              padding: 0 0 5px;
+              padding: 0 0 1px;
               text-align: center;
               margin-right: 15px; }
     .sl-recruit-inn-button {
@@ -1347,12 +1351,12 @@ img {
           width: 90%;
           margin: 0 auto; } }
     .sl-contact-inn-form {
-      padding: 50px 60px 10px;
+      padding: 50px 30px 10px;
       font-weight: 400;
       background: #fffdf3;
       max-width: 600px;
       width: 80%;
-      margin: 30px 0; }
+      margin: 30px 0 50px; }
       @media screen and (max-width: 768px) {
         .sl-contact-inn-form {
           width: 100%;
@@ -1388,7 +1392,7 @@ img {
         .sl-contact-inn-form p:first-child:after {
           content: "";
           position: absolute;
-          right: 10px;
+          right: 30px;
           bottom: 15px;
           width: 0;
           height: 0;
