@@ -29,28 +29,6 @@ $(document).ready(function() {
 
 });
 
-// $(document).ready(function() {
-
-//     //When page loads...
-//     $(".tabs-content .tabs-inn").hide(); //Hide all content
-//     $(".tabs li:first a").addClass("active").show(); //Activate first tab
-//     $(".tabs-content .tabs-inn:first").show(); //Show first tab content
-
-//     //On Click Event
-//     $(".tabs li a").click(function() {
-
-//         $(".tabs li a").removeClass("selected"); //Remove any "active" class
-//         $(this).addClass("selected"); //Add "active" class to selected tab
-//         $(".tabs-content .tabs-inn").hide(); //Hide all tab content
-
-//         var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
-//         $(activeTab).fadeIn(); //Fade in the active ID content
-//         $(".tabs-content .tabs-inn").show();
-//         return true;
-//     });
-
-
-// });
 
 var showTab = function(selector) {
     $('.tabs-inn').hide();
