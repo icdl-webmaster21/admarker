@@ -259,7 +259,7 @@
                     }
                     .details-img {
                         width: 70%;
-                        max-width: 532px;
+                        max-width: 540px;
                         margin-left: auto;
                         @include mqSp() {
                             width: 90%;
@@ -280,20 +280,19 @@
             }
         }
         .tabs {
-            a{
+            a {
                 &.active {
-                    color: red;
+                    color: #f8bb2c;
                 }
             }
         }
         .nav-tabs {
-            a{
+            a {
                 &.active {
-                    color: red;
+                    color: #f8bb2c;
                 }
             }
         }
-        
         .tabs-content {
             width: 100%;
         }
@@ -301,9 +300,9 @@
             position: relative;
             display: flex;
             align-items: flex-end;
-            // &.active {
-            //     display: flex;
-            // }
+            @include mqSp() {
+                display: block;
+            }
         }
     }
 }

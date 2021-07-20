@@ -898,7 +898,7 @@ img {
           margin-top: 10px; } }
     .sl-service-inn-content-fl .details-img {
       width: 70%;
-      max-width: 532px;
+      max-width: 540px;
       margin-left: auto; }
       @media screen and (max-width: 768px) {
         .sl-service-inn-content-fl .details-img {
@@ -914,15 +914,18 @@ img {
           .sl-service-inn-content-fl .details-img img {
             height: 200px; } }
 .sl-service .tabs a.active {
-  color: red; }
+  color: #f8bb2c; }
 .sl-service .nav-tabs a.active {
-  color: red; }
+  color: #f8bb2c; }
 .sl-service .tabs-content {
   width: 100%; }
 .sl-service .tabs-inn {
   position: relative;
   display: flex;
   align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .sl-service .tabs-inn {
+      display: block; } }
 
 .sl-recruit {
   width: 100%;

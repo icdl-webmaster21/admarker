@@ -29,14 +29,6 @@ $(document).ready(function() {
 
 });
 
-// $(function() {
-//     var activeTab = document.querySelector(location.hash);
-//     if (activeTab) {
-//       activeTab.click();
-//     }
-//   });
-
-
 // $(document).ready(function() {
 
 //     //When page loads...
@@ -61,20 +53,23 @@ $(document).ready(function() {
 // });
 
 var showTab = function(selector) {
-    $('.tabs-inn').hide()
+    $('.tabs-inn').hide();
     $(selector).show();
+    $(selector).addClass('active');
+    $('.nav-tabs li:first a').removeClass('active');
 }
 
+
 $('.tabs a').click(function(event) {
-    var $el = $(event.target).closest('a')
-    var id = $el.attr('id')
-    showTab('#' + id)
+    var $el = $(event.target).closest('a');
+    var id = $el.attr('id');
+    showTab('#' + id);
 });
 
 $(function() {
-    var selector = window.location.hash
+    var selector = window.location.hash;
     if (selector) {
-        showTab(selector)
+        showTab(selector);
+        $('.nav-tabs a[href="' + selector + '"]').addClass('active');
     }
-    // $('.nav-tabs a').addClass('active');
 })
