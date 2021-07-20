@@ -25,6 +25,7 @@ $(document).ready(function() {
         return false; // prevents link action
 
     }); // end click 
+
     $('.nav-tabs li:first a').click();
 
 });

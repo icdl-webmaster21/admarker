@@ -42,7 +42,7 @@
             &-content {
                 padding: 20px 0 20px 30px;
                 @include mqSp() {
-                    padding: 20px 0;
+                    padding: 20px 0 0;
                     width: 90%;
                     margin: 0 auto;
                 }
@@ -72,8 +72,9 @@
                 padding: 50px 7% 30px 30px;
                 margin-bottom: 50px;
                 @include mqSp() {
-                    width: 100%;
+                    width: 90%;
                     padding: 40px 20px 30px;
+                    margin: 0 auto 30px;
                 }
                 .list {
                     margin-bottom: 20px;
@@ -172,18 +173,18 @@
                                 }
                                 &:first-child {
                                     span {
-                                       background-color: #EDC92F; 
+                                        background-color: #EDC92F;
                                     }
                                 }
                                 &:nth-child(2) {
                                     span {
-                                        background-color: #DDBA2A; 
-                                     } 
+                                        background-color: #DDBA2A;
+                                    }
                                 }
                                 &:nth-child(3) {
                                     span {
-                                        background-color: #DBB30E 
-                                     } 
+                                        background-color: #DBB30E
+                                    }
                                 }
                                 span {
                                     width: 70px;
@@ -223,6 +224,11 @@
                     letter-spacing: 0.2em;
                     line-height: 2;
                     font-family: $enfont;
+                    @include mqSp() {
+                        width: 230px;
+                        font-size: 20px;
+                        padding: 10px;
+                    }
                 }
             }
         }

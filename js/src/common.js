@@ -16,9 +16,11 @@ $('.more-service .plus').click(function(e) {
 
 $(function() {
     $('.l-hd-inn-menu-inner').css({ 'min-height': (($(window).height()) - 110) + 'px' });
+    $('#mv').css({ 'height': (($(window).height()) - 110) + 'px' });
 
     $(window).bind('resize', function() {
         $('.l-hd-inn-menu-inner').css({ 'min-height': (($(window).height()) - 110) + 'px' });
+        $('#mv').css({ 'height': (($(window).height()) - 110) + 'px' });
 
     });
 });

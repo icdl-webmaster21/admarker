@@ -1,129 +1,128 @@
-            .l {
-                &-mv {
-                    height: calc(100vh - 60px);
-                    mix-blend-mode: darken;
-                    padding-bottom: 110px;
-                    @include mqSp() {
-                        height: 100%;
-                    }
-                    &-inn {
-                        position: relative;
+.l {
+    &-mv {
+        mix-blend-mode: darken;
+        @include mqSp() {
+            height: 100% !important;
+        }
+        &-inn {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            padding-right: 50px;
+            height: 100%;
+            @include mqSp() {
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+            &-image {
+                position: relative;
+                width: 85.7%;
+                height: calc(100% - 61px);
+                min-height: 400px;
+                margin-left: auto;
+                background-image: url('../images/mv-img.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                transition: all 1000ms ease;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                &.unset {
+                    background-image: unset;
+                }
+                @include mqSp {
+                    width: 75%;
+                    height: 55vh;
+                }
+                .slide-img {
+                    img {
+                        position: absolute;
                         width: 100%;
-                        margin: 0 auto;
-                        padding-right: 50px;
                         height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        object-fit: cover;
+                        object-position: center;
+                        overflow: hidden;
+                        transform: scale(2) rotate(-35deg);
+                        -webkit-transform: scale(2) rotate(-35deg);
+                        -moz-transform: scale(2) rotate(-35deg);
+                        -ms-transform: scale(2) rotate(-35deg);
+                        -o-transform: scale(2) rotate(-35deg);
+                        transition: all 1000ms ease;
+                        -webkit-transition: all 1000ms ease;
+                        -moz-transition: all 1000ms ease;
+                        -ms-transition: all 1000ms ease;
+                        -o-transition: all 1000ms ease;
                         @include mqSp() {
-                            padding: 0 10px;
-                            box-sizing: border-box;
+                            transform: scale(1) rotate(0deg);
+                            -webkit-transform: scale(1) rotate(0deg);
+                            -moz-transform: scale(1) rotate(0deg);
+                            -ms-transform: scale(1) rotate(0deg);
+                            -o-transform: scale(1) rotate(0deg);
                         }
-                        &-image {
-                            position: relative;
-                            width: 85.7%;
-                            height: calc(100% - 61px);
-                            min-height: 463px;
-                            margin-left: auto;
-                            background-image: url('../images/mv-img.png');
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: cover;
-                            overflow: hidden;
+                        &.hovered {
+                            opacity: 1;
+                            transform: scale(1) rotate(0deg);
+                            -webkit-transform: scale(1) rotate(0deg);
+                            -moz-transform: scale(1) rotate(0deg);
+                            -ms-transform: scale(1) rotate(0deg);
+                            -o-transform: scale(1) rotate(0deg);
                             transition: all 1000ms ease;
                             -webkit-transition: all 1000ms ease;
                             -moz-transition: all 1000ms ease;
                             -ms-transition: all 1000ms ease;
                             -o-transition: all 1000ms ease;
-                            &.unset {
-                                background-image: unset;
-                            }
-                            @include mqSp {
-                                width: 75%;
-                                height: 55vh;
-                            }
-                            .slide-img {
-                                img {
-                                    position: absolute;
-                                    width: 100%;
-                                    height: 100%;
-                                    top: 0;
-                                    left: 0;
-                                    opacity: 0;
-                                    object-fit: cover;
-                                    object-position: center;
-                                    overflow: hidden;
-                                    transform: scale(2) rotate(-35deg);
-                                    -webkit-transform: scale(2) rotate(-35deg);
-                                    -moz-transform: scale(2) rotate(-35deg);
-                                    -ms-transform: scale(2) rotate(-35deg);
-                                    -o-transform: scale(2) rotate(-35deg);
-                                    transition: all 1000ms ease;
-                                    -webkit-transition: all 1000ms ease;
-                                    -moz-transition: all 1000ms ease;
-                                    -ms-transition: all 1000ms ease;
-                                    -o-transition: all 1000ms ease;
-                                    @include mqSp() {
-                                        transform: scale(1) rotate(0deg);
-                                        -webkit-transform: scale(1) rotate(0deg);
-                                        -moz-transform: scale(1) rotate(0deg);
-                                        -ms-transform: scale(1) rotate(0deg);
-                                        -o-transform: scale(1) rotate(0deg);
-                                    }
-                                    &.hovered {
-                                        opacity: 1;
-                                        transform: scale(1) rotate(0deg);
-                                        -webkit-transform: scale(1) rotate(0deg);
-                                        -moz-transform: scale(1) rotate(0deg);
-                                        -ms-transform: scale(1) rotate(0deg);
-                                        -o-transform: scale(1) rotate(0deg);
-                                        transition: all 1000ms ease;
-                                        -webkit-transition: all 1000ms ease;
-                                        -moz-transition: all 1000ms ease;
-                                        -ms-transition: all 1000ms ease;
-                                        -o-transition: all 1000ms ease;
-                                    }
-                                }
-                            }
-                        }
-                        &-ttl {
-                            position: absolute;
-                            width: 40%;
-                            left: -23px;
-                            bottom: 55px;
-                            padding-left: 23px;
-                            mix-blend-mode: luminosity;
-                            z-index: 9;
-                            @include mqSp() {
-                                width: 85%;
-                                left: 8%;
-                                bottom: 20%;
-                                padding-left: 0;
-                            }
-                        }
-                        &-infotxt {
-                            padding-top: 80px;
-                            @include mqSp() {
-                                padding-top: 19%;
-                                margin-left: 6%;
-                            }
-                            span {
-                                display: inline-block;
-                                padding: 0 3px;
-                                font-size: 14px;
-                                font-size: 1.4rem;
-                                line-height: 1.5;
-                                color: #fff;
-                                background-color: #000;
-                                letter-spacing: 0.05em;
-                                @include mqSp() {
-                                    margin-bottom: 4px;
-                                    padding: 1px 3px;
-                                    background-color: #231815;
-                                    font-size: 15px;
-                                    font-size: 1.5rem;
-                                    box-sizing: border-box;
-                                    letter-spacing: 3px;
-                                }
-                            }
                         }
                     }
                 }
             }
+            &-ttl {
+                position: absolute;
+                width: 40%;
+                left: -23px;
+                bottom: 55px;
+                padding-left: 23px;
+                mix-blend-mode: luminosity;
+                z-index: 9;
+                @include mqSp() {
+                    width: 80%;
+                    left: 8%;
+                    bottom: 28%;
+                    padding-left: 0;
+                }
+            }
+            &-infotxt {
+                padding-top: 45px;
+                @include mqSp() {
+                    padding-top: 20%;
+                    padding-bottom: 50px;
+                    margin-left: 6%;
+                }
+                span {
+                    display: inline-block;
+                    padding: 0 3px;
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    color: #fff;
+                    background-color: #000;
+                    letter-spacing: 0.05em;
+                    @include mqSp() {
+                        margin-bottom: 4px;
+                        padding: 1px 3px;
+                        background-color: #231815;
+                        font-size: 15px;
+                        font-size: 1.5rem;
+                        box-sizing: border-box;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
