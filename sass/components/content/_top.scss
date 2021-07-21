@@ -1,8 +1,11 @@
 .l {
     &-mv {
+        height: calc(100vh - 60px);
         mix-blend-mode: darken;
+        padding-bottom: 110px;
         @include mqSp() {
-            height: 100% !important;
+            height: 100%;
+            padding-bottom: 50px;
         }
         &-inn {
             position: relative;
@@ -18,7 +21,7 @@
                 position: relative;
                 width: 85.7%;
                 height: calc(100% - 61px);
-                min-height: 400px;
+                min-height: 463px;
                 margin-left: auto;
                 background-image: url('../images/mv-img.png');
                 background-repeat: no-repeat;
@@ -85,22 +88,21 @@
                 position: absolute;
                 width: 40%;
                 left: -23px;
-                bottom: 55px;
+                bottom: 45px;
                 padding-left: 23px;
                 mix-blend-mode: luminosity;
                 z-index: 9;
                 @include mqSp() {
                     width: 80%;
                     left: 8%;
-                    bottom: 28%;
+                    bottom: 20%;
                     padding-left: 0;
                 }
             }
             &-infotxt {
-                padding-top: 45px;
+                padding-top: 80px;
                 @include mqSp() {
                     padding-top: 20%;
-                    padding-bottom: 50px;
                     margin-left: 6%;
                 }
                 span {

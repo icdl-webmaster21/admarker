@@ -411,7 +411,8 @@ img {
 
 .sl .sub-bg {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
   .sl .sub-bg.service-bg::after {
     top: 280px;
     left: 14%; }
@@ -432,16 +433,41 @@ img {
     position: absolute;
     top: 350px;
     left: 7%;
-    z-index: -1; }
+    z-index: -1;
+    animation: lotationscale 30s ease-in-out infinite;
+    -webkit-animation: lotationscale 30s ease-in-out infinite;
+    overflow: hidden; }
     @media screen and (max-width: 768px) {
       .sl .sub-bg:after {
         display: none; } }
 
+@keyframes lotationscale {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5); }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
 .l-mv {
-  mix-blend-mode: darken; }
+  height: calc(100vh - 60px);
+  mix-blend-mode: darken;
+  padding-bottom: 110px; }
   @media screen and (max-width: 768px) {
     .l-mv {
-      height: 100% !important; } }
+      height: 100%;
+      padding-bottom: 50px; } }
   .l-mv-inn {
     position: relative;
     width: 100%;
@@ -456,7 +482,7 @@ img {
       position: relative;
       width: 85.7%;
       height: calc(100% - 61px);
-      min-height: 400px;
+      min-height: 463px;
       margin-left: auto;
       background-image: url("../images/mv-img.png");
       background-repeat: no-repeat;
@@ -517,7 +543,7 @@ img {
       position: absolute;
       width: 40%;
       left: -23px;
-      bottom: 55px;
+      bottom: 45px;
       padding-left: 23px;
       mix-blend-mode: luminosity;
       z-index: 9; }
@@ -525,14 +551,13 @@ img {
         .l-mv-inn-ttl {
           width: 80%;
           left: 8%;
-          bottom: 28%;
+          bottom: 20%;
           padding-left: 0; } }
     .l-mv-inn-infotxt {
-      padding-top: 45px; }
+      padding-top: 80px; }
       @media screen and (max-width: 768px) {
         .l-mv-inn-infotxt {
           padding-top: 20%;
-          padding-bottom: 50px;
           margin-left: 6%; } }
       .l-mv-inn-infotxt span {
         display: inline-block;
@@ -609,6 +634,8 @@ img {
             .sl-about-inn-company-fl .company dl {
               letter-spacing: 0.1em;
               padding: 20px 10px 15px; } }
+          .sl-about-inn-company-fl .company dl:first-child {
+            padding: 0px 30px 20px 25px; }
           @media screen and (max-width: 768px) {
             .sl-about-inn-company-fl .company dl:last-child {
               border-bottom: none; } }
@@ -669,7 +696,7 @@ img {
           padding-top: 20px; } }
     .sl-about-inn-access-address {
       max-width: 726px;
-      width: 75%;
+      width: 85%;
       padding-bottom: 40px; }
       @media screen and (max-width: 768px) {
         .sl-about-inn-access-address {
