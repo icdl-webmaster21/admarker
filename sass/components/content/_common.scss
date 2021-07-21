@@ -77,7 +77,7 @@
             animation: lotationscale 30s ease-in-out infinite;
             -webkit-animation: lotationscale 30s ease-in-out infinite;
             overflow: hidden;
-            @include mqSp(){
+            @include mqSp() {
                 display: none;
             }
         }
@@ -91,19 +91,19 @@
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-}
+    }
     50% {
         transform: scale(1.5);
         -webkit-transform: scale(1.5);
         -moz-transform: scale(1.5);
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
-}
+    }
     100% {
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-}
+    }
 }
