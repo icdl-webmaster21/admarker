@@ -12,19 +12,43 @@ $('.sub-menu-02 li a').hover(
 );
 
 //servie details tab jquery
-// $(document).ready(function() {
-//     $('.tabs a').click(function() {
+$(document).ready(function() {
+    $('.nav-tabs a').click(function() {
 
-//         $('.service-tab').hide();
-//         $('.tabs a.active').removeClass('active');
-//         $(this).addClass('active');
+        $('.tabs-inn').hide();
+        $('.nav-tabs a.active').removeClass('active');
+        $(this).addClass('active');
 
-//         var panel = $(this).attr('href');
-//         $(panel).fadeIn(1000);
+        var panel = $(this).attr('href');
+        $(panel).fadeIn(1000);
 
-//         return false; // prevents link action
+        return false; // prevents link action
 
-//     }); // end click 
-//     $('.tabs li:first a').click();
+    }); // end click 
 
-// });
+    $('.nav-tabs li:first a').click();
+
+});
+
+//servie with related tab jquery
+var showTab = function(selector) {
+    $('.tabs-inn').hide();
+    $(selector).show();
+    $(selector).addClass('active');
+    $('.nav-tabs li:first a').removeClass('active');
+}
+
+
+$('.tabs a').click(function(event) {
+    var $el = $(event.target).closest('a');
+    var id = $el.attr('id');
+    showTab('#' + id);
+});
+
+$(function() {
+    var selector = window.location.hash;
+    if (selector) {
+        showTab(selector);
+        $('.nav-tabs a[href="' + selector + '"]').addClass('active');
+    }
+})

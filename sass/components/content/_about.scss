@@ -1,15 +1,11 @@
 .sl {
     &-about {
         width: 100%;
-        padding-left: 72px;
         position: relative;
         z-index: 1;
-        @include mqSp() {
-            padding: 0;
-        }
         &-inn {
-            max-width: 782px;
-            width: 95%;
+            width: 86%;
+            margin: 0 auto;
             @include mqSp() {
                 width: 90%;
                 margin: 0 auto;
@@ -62,6 +58,9 @@
                                 letter-spacing: 0.1em;
                                 padding: 20px 10px 15px;
                             }
+                            &:first-child {
+                                padding: 0px 30px 20px 25px;
+                            }
                             &:last-child {
                                 @include mqSp() {
                                     border-bottom: none;
@@ -105,6 +104,180 @@
                             border-bottom: 1px solid #999999;
                         }
                     }
+                    .chart-wrap {
+                        max-width: 534px;
+                        width: 65%;
+                        padding: 0 0 50px 30px;
+                        position: relative;
+                        @include mqSp() {
+                            width: 100%;
+                            padding: 0 10px 40px;
+                            border-bottom: 1px solid #999999;
+                        }
+                        .chart-description {
+                            margin-bottom: 30px;
+                            span {
+                                display: inline-block;
+                                letter-spacing: 0.05em;
+                                line-height: 1.8;
+                                font-size: 12px;
+                                font-size: 1.2rem;
+                                color: #231815;
+                                font-family: $enfont;
+                                font-weight: 400;
+                            }
+                            .sale-amount {
+                                margin-right: 5%;
+                                &:after {
+                                    content: "";
+                                    float: left;
+                                    display: block;
+                                    width: 12px;
+                                    height: 12px;
+                                    background: #f8bb2c;
+                                    margin-right: 5px;
+                                    margin-top: 5px;
+                                }
+                            }
+                            .net-income {
+                                &:after {
+                                    content: "";
+                                    float: left;
+                                    display: block;
+                                    width: 12px;
+                                    height: 12px;
+                                    background: #ff8103;
+                                    margin-right: 5px;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                        .chart-count {
+                            p {
+                                padding-bottom: 36px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                position: relative;
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 11px;
+                                    left: 50%;
+                                    width: 80.4%;
+                                    height: 1px;
+                                    background: #878787;
+                                    transform: translate(-50%, 0);
+                                    -webkit-transform: translate(-50%, 0);
+                                    -moz-transform: translate(-50%, 0);
+                                    -ms-transform: translate(-50%, 0);
+                                    -o-transform: translate(-50%, 0);
+                                }
+                                span {
+                                    font-size: 12px;
+                                    font-size: 1.2rem;
+                                    letter-spacing: 0;
+                                    line-height: 1.8;
+                                    color: #000000;
+                                    font-family: $enfont;
+                                    font-weight: 400;
+                                }
+                                &:last-child {
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                        .chart-year {
+                            width: 78%;
+                            position: absolute;
+                            bottom: 38px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            padding-left: 30px;
+                            %spanwidth {
+                                width: 20px;
+                                display: inline-block;
+                            }
+                            .sale-amount {
+                                @extend %spanwidth;
+                                background: #f8bb2c;
+                                margin-right: 2px;
+                            }
+                            .net-income {
+                                @extend %spanwidth;
+                                background: #ff8103;
+                            }
+                            .year {
+                                display: block;
+                                font-size: 12px;
+                                font-size: 1.2rem;
+                                letter-spacing: 0;
+                                line-height: 1.8;
+                                color: #000000;
+                                font-family: $enfont;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                            .year-2015 {
+                                .sale-amount {
+                                    height: 51px;
+                                }
+                                .net-income {
+                                    height: 20px;
+                                }
+                            }
+                            .year-2016 {
+                                .sale-amount {
+                                    height: 63px;
+                                }
+                                .net-income {
+                                    height: 25px;
+                                }
+                            }
+                            .year-2017 {
+                                .sale-amount {
+                                    height: 75px;
+                                }
+                                .net-income {
+                                    height: 25px;
+                                }
+                            }
+                            .year-2018 {
+                                .sale-amount {
+                                    height: 85px;
+                                }
+                                .net-income {
+                                    height: 35px;
+                                }
+                            }
+                            .year-2019 {
+                                .sale-amount {
+                                    height: 104px;
+                                }
+                                .net-income {
+                                    height: 43px;
+                                }
+                            }
+                            .year-2020 {
+                                .sale-amount {
+                                    height: 125px;
+                                }
+                                .net-income {
+                                    height: 26px;
+                                }
+                            }
+                            .year-2021 {
+                                .sale-amount {
+                                    height: 156px;
+                                }
+                                .net-income {
+                                    height: 68px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             &-access {
@@ -137,7 +310,7 @@
                 }
                 &-address {
                     max-width: 726px;
-                    width: 75%;
+                    width: 85%;
                     padding-bottom: 40px;
                     @include mqSp() {
                         width: 100%;
