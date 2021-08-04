@@ -723,10 +723,14 @@ img {
             content: "";
             position: absolute;
             top: 11px;
-            left: 0;
-            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 96px);
             height: 1px;
             background: #878787; }
+            @media screen and (max-width: 768px) {
+              .sl-about-inn-company-chart .chart-wrap .chart-count p:after {
+                width: calc(100% - 70px); } }
           .sl-about-inn-company-chart .chart-wrap .chart-count p span {
             font-size: 12px;
             font-size: 1.2rem;
@@ -734,39 +738,31 @@ img {
             line-height: 1.8;
             color: #000000;
             font-family: "Montserrat", sans-serif;
-            font-weight: 400;
-            background: #fff;
-            position: relative;
-            z-index: 1; }
+            font-weight: 400; }
             @media screen and (max-width: 768px) {
               .sl-about-inn-company-chart .chart-wrap .chart-count p span {
                 font-size: 1rem; } }
-          .sl-about-inn-company-chart .chart-wrap .chart-count p .start {
-            padding-right: 10px; }
-            @media screen and (max-width: 550px) {
-              .sl-about-inn-company-chart .chart-wrap .chart-count p .start {
-                padding-right: 5px; } }
-          .sl-about-inn-company-chart .chart-wrap .chart-count p .end {
-            padding-left: 10px; }
-            @media screen and (max-width: 550px) {
-              .sl-about-inn-company-chart .chart-wrap .chart-count p .end {
-                padding-left: 5px; } }
           .sl-about-inn-company-chart .chart-wrap .chart-count p:last-child {
             padding-bottom: 0; }
         .sl-about-inn-company-chart .chart-wrap .chart-year {
-          width: 100%;
           position: absolute;
           bottom: -11px;
           left: 50%;
           transform: translateX(-50%);
+          width: calc(100% - 110px);
           justify-content: space-between;
-          align-items: flex-end;
-          padding: 0 55px; }
-          @media screen and (max-width: 450px) {
+          align-items: flex-end; }
+          @media screen and (max-width: 768px) {
             .sl-about-inn-company-chart .chart-wrap .chart-year {
-              padding: 0 45px; } }
+              width: calc(100% - 75px); } }
           .sl-about-inn-company-chart .chart-wrap .chart-year .sale-amount, .sl-about-inn-company-chart .chart-wrap .chart-year .net-income {
             width: 45%; }
+            @media screen and (max-width: 768px) {
+              .sl-about-inn-company-chart .chart-wrap .chart-year .sale-amount, .sl-about-inn-company-chart .chart-wrap .chart-year .net-income {
+                width: 46%; } }
+            @media screen and (max-width: 350px) {
+              .sl-about-inn-company-chart .chart-wrap .chart-year .sale-amount, .sl-about-inn-company-chart .chart-wrap .chart-year .net-income {
+                width: 50%; } }
           .sl-about-inn-company-chart .chart-wrap .chart-year p {
             display: flex;
             flex-wrap: wrap;
@@ -776,7 +772,10 @@ img {
             width: 4.3vw; }
             @media screen and (max-width: 768px) {
               .sl-about-inn-company-chart .chart-wrap .chart-year p {
-                width: 8.5vw; } }
+                width: 8vw; } }
+            @media screen and (max-width: 350px) {
+              .sl-about-inn-company-chart .chart-wrap .chart-year p {
+                width: 7.7vw; } }
           .sl-about-inn-company-chart .chart-wrap .chart-year .sale-amount {
             background: #f8bb2c; }
           .sl-about-inn-company-chart .chart-wrap .chart-year .net-income {
